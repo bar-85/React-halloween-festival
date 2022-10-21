@@ -1,0 +1,249 @@
+.hero {
+	display: flex;
+	justify-content: space-between;
+}
+
+.left-side {
+	padding: 3rem;
+	padding-top: 0.5rem;
+	flex: 3.5;
+	display: flex;
+	gap: 1.5rem;
+	flex-direction: column;
+}
+
+.right-side {
+	flex: 1;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.26);
+}
+
+.up-title {
+	margin-top: 4rem;
+	color: white;
+	background-color: rgba(76, 19, 106, 0.564);
+	border-radius: 1rem;
+	width: fit-content;
+	padding: 20px 13px;
+	text-transform: uppercase;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.up-title > span {
+	z-index: 2;
+}
+
+.up-title > div {
+	position: absolute;
+	background-color: rgba(255, 166, 0, 0.026);
+	box-shadow: 0px 0px 79px 62px rgba(255, 166, 0, 0.196);
+	width: 0rem;
+	height: 100%;
+	left: 8px;
+	border-radius: 3rem;
+	z-index: 1;
+}
+
+.medium-title {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	text-transform: uppercase;
+	font-size: 4.5rem;
+	font-weight: bold;
+	color: white;
+	z-index: 2;
+}
+
+.festival-date {
+	display: flex;
+	gap: 2rem;
+}
+
+.festival-date > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.festival-date > div > span:nth-of-type(1) {
+	color: var(--orange);
+	font-size: 2rem;
+}
+
+.festival-date > div > span:nth-of-type(2) {
+	color: var(--gray);
+	text-transform: none;
+}
+
+.hero-buttons {
+	display: flex;
+	gap: 1rem;
+	font-weight: normal;
+}
+
+.hero-buttons > :nth-child(1) {
+	color: black;
+	background-color: var(--orange);
+	width: 8rem;
+}
+
+.hero-buttons > :nth-child(1):hover {
+	background-color: rgb(254, 176, 31);
+}
+
+.hero-buttons > :nth-child(2) {
+	color: white;
+	background-color: transparent;
+	width: 8rem;
+	border: 2px solid var(--orange);
+}
+
+.hero-buttons > :nth-child(2):hover {
+	background-color: rgba(255, 166, 0, 0.193);
+}
+
+.right-side > .btn {
+	position: absolute;
+	right: 3rem;
+	top: 3rem;
+	color: white;
+	background-color: transparent;
+	width: 8rem;
+	border: 2px solid white;
+}
+
+.right-side > .btn:hover {
+	background-color: rgba(255, 255, 255, 0.103);
+	color: orange;
+}
+
+.bat-image {
+	position: absolute;
+	left: -230%;
+	top: 7rem;
+	width: 10rem;
+	height: 10rem;
+}
+
+.back-image {
+	position: absolute;
+	top: 10rem;
+	left: -60%;
+	height: 13rem;
+	z-index: 3;
+}
+
+.moon-image {
+	position: absolute;
+	top: 5rem;
+	left: -20%;
+	height: 13rem;
+	z-index: 0;
+}
+
+.house-image {
+	position: absolute;
+	top: 13rem;
+	left: 30%;
+	height: 28rem;
+}
+
+.hero-blur {
+	width: 25rem;
+	height: 25rem;
+	right: 0;
+}
+
+@media screen and (max-width: 900px) {
+	.hero {
+		flex-direction: column;
+	}
+
+	.hero-blur {
+		width: 10rem;
+		top: 60%;
+		
+	}
+
+	.up-title {
+		margin-top: 0;
+		font-size: small;
+		align-self: center;
+		transform: scale(0.8);
+	}
+
+	.medium-title {
+		font-size: 3rem;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.festival-date {
+		align-self: center;
+	}
+
+	.festival-date > div > span:nth-of-type(1) {
+		font-size: large;
+		align-self: center;
+	}
+
+	.festival-date > div > span:nth-of-type(2) {
+		font-size: small;
+		align-self: center;
+	}
+
+	.hero-buttons {
+		justify-content: center;
+	}
+
+	.right-side {
+		position: relative;
+		background: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.house-image {
+		position: relative;
+		align-self: center;
+		width: 23rem;
+		height: 18rem;
+		top: 13rem;
+        left: 0rem;
+        z-index: -3;
+		
+	}
+
+    .moon-image {
+        position: relative;
+		align-self: center;
+        width: 7rem;
+        height: 7rem;
+        left: 15rem;
+        top: -18rem;
+        z-index: -1;
+    }
+
+	.back-image {
+		position: relative;
+		height: 8rem;
+		width: 14rem;
+		left: 10%;
+		top: -16rem;
+        
+        z-index: 2;
+	}
+
+	.bat-image {
+		display: none;
+	}
+
+    .right-side > .btn {
+        display: none;
+    }
+
+}
