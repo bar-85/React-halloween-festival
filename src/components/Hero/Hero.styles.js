@@ -110,19 +110,28 @@ export const FestivalDate = styled.div`
 		text-transform: none;
 	}
 
-    @media screen and (max-width: 900px) {
-    align-self: center;
+	@media screen and (max-width: 900px) {
+		align-self: center;
 
-    div > span:nth-of-type(1) {
-        font-size: large;
-        align-self: center;
-    }
+		div > span:nth-of-type(1) {
+			font-size: large;
+			align-self: center;
+		}
 
-    div > span:nth-of-type(2) {
-        font-size: small;
-        align-self: center;
-    }
+		div > span:nth-of-type(2) {
+			font-size: small;
+			align-self: center;
+		}
+	}
 `
 
+export const HeroButton = styled.div`
+	display: flex;
+	gap: 1rem;
+	font-weight: normal;
 
+	@media screen and (max-width: 900px) {
+        justify-content: center;
+    }
 
+`

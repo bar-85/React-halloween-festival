@@ -8,8 +8,11 @@ import house from '../../assets/house2.png'
 import moon from '../../assets/moon.png'
 import NumberCounter from 'number-counter'
 import { motion } from 'framer-motion'
-import { Wrapper, LeftSide, RightSide, UpTitle, MediumTitle, FestivalDate } from './Hero.styles'
+import { Wrapper, LeftSide, RightSide, UpTitle, MediumTitle, FestivalDate, HeroButton } from './Hero.styles'
 import Blur from '../Blur/Blur'
+import ButtonContact from '../Buttons/ButtonContact'
+import ButtonMore from '../Buttons/ButtonMore'
+import ButtonContactWhite from '../Buttons/ButtonContactWhite'
 
 
 const Hero = () => {
@@ -53,15 +56,14 @@ const Hero = () => {
 							<span>rok</span>
 						</div>
 					</FestivalDate>
-					<div className='hero-buttons'>
-						<button className='btn'>Kontakt</button>
-						<button className='btn'>Czytaj więcej</button>
-					</div>
+					<HeroButton>
+						<ButtonContact />
+						<ButtonMore />
+					</HeroButton>
 					<img src={house} alt='' className='house-image' />
 				</LeftSide>
 				<RightSide>
-				
-					<button className='btn'>Kontakt</button>
+					<ButtonContactWhite />
 					<img src={moon} alt='' className='moon-image' />
 					<motion.div
 						animate={{ y: [0, 10, 7, 15, 9, 12, 0] }}

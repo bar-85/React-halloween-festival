@@ -1,46 +1,4 @@
 
-.hero-buttons {
-	display: flex;
-	gap: 1rem;
-	font-weight: normal;
-}
-
-.hero-buttons > :nth-child(1) {
-	color: black;
-	background-color: var(--orange);
-	width: 8rem;
-}
-
-.hero-buttons > :nth-child(1):hover {
-	background-color: rgb(254, 176, 31);
-}
-
-.hero-buttons > :nth-child(2) {
-	color: white;
-	background-color: transparent;
-	width: 8rem;
-	border: 2px solid var(--orange);
-}
-
-.hero-buttons > :nth-child(2):hover {
-	background-color: rgba(255, 166, 0, 0.193);
-}
-
-.right-side > .btn {
-	position: absolute;
-	right: 3rem;
-	top: 3rem;
-	color: white;
-	background-color: transparent;
-	width: 8rem;
-	border: 2px solid white;
-}
-
-.right-side > .btn:hover {
-	background-color: rgba(255, 255, 255, 0.103);
-	color: orange;
-}
-
 .bat-image {
 	position: absolute;
 	left: -230%;
@@ -116,8 +74,6 @@
 		display: none;
 	}
 
-    .right-side > .btn {
-        display: none;
-    }
+
 
 }

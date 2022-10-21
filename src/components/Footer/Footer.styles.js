@@ -21,9 +21,13 @@ export const Wrapper = styled.div`
 	}
 
 	li a:hover {
-		padding-bottom: 12px;
+		padding-bottom: 8px;
 		border-bottom: 3px solid orange;
 		color: orange;
+	}
+
+	@media screen and (max-width: 900px) {
+		font-size: small;
 	}
 `
 export const Container = styled.div`
@@ -39,4 +43,6 @@ export const BottomText = styled.div`
 	span {
 		margin-bottom: 1rem;
 	}
+
+	
 `
