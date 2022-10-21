@@ -6,10 +6,6 @@ export const Wrapper = styled.div`
 
 `
 
-export const Blur = styled.div`
-    &.hero-blur {
-	width: 25rem;
-	height: 25rem;
-	right: 0;
-}
-`
+
+
+

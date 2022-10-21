@@ -8,14 +8,15 @@ import house from '../../assets/house2.png'
 import moon from '../../assets/moon.png'
 import NumberCounter from 'number-counter'
 import { motion } from 'framer-motion'
-import { Wrapper, Blur } from './Hero.styles'
+import { Wrapper } from './Hero.styles'
+import Blur from '../Blur/Blur'
 
 
 const Hero = () => {
 	return (
 		<div>
 			<Wrapper>
-				<Blur className={'blur hero-blur'}></Blur>	
+				<Blur />	
 				<div className='left-side'>
 					<Header />
 					<div className='up-title'>

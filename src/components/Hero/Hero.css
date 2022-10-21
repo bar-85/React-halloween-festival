@@ -147,7 +147,11 @@
 	height: 28rem;
 }
 
-
+.hero-blur {
+	width: 25rem;
+	height: 25rem;
+	right: 0;
+}
 
 @media screen and (max-width: 900px) {
 	.hero {
