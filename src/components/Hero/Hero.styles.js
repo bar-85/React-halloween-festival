@@ -77,11 +77,52 @@ export const MediumTitle = styled.div`
 	color: white;
 	z-index: 2;
 
+	.stroke-text {
+		color: transparent;
+		font-family: Arial, Helvetica, sans-serif;
+		-webkit-text-stroke-width: 1.5px;
+		-webkit-text-stroke-color: orange;
+	}
+
 	@media screen and (max-width: 900px) {
 		font-size: 3rem;
 		align-items: center;
 		justify-content: center;
 	}
 `
+
+export const FestivalDate = styled.div`
+	display: flex;
+	gap: 2rem;
+
+	div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	div > span:nth-of-type(1) {
+		color: orange;
+		font-size: 2rem;
+	}
+
+	div > span:nth-of-type(2) {
+		color: var(--gray);
+		text-transform: none;
+	}
+
+    @media screen and (max-width: 900px) {
+    align-self: center;
+
+    div > span:nth-of-type(1) {
+        font-size: large;
+        align-self: center;
+    }
+
+    div > span:nth-of-type(2) {
+        font-size: small;
+        align-self: center;
+    }
+`
+
 
 

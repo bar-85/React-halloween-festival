@@ -8,7 +8,7 @@ import house from '../../assets/house2.png'
 import moon from '../../assets/moon.png'
 import NumberCounter from 'number-counter'
 import { motion } from 'framer-motion'
-import { Wrapper, LeftSide, RightSide, UpTitle, MediumTitle } from './Hero.styles'
+import { Wrapper, LeftSide, RightSide, UpTitle, MediumTitle, FestivalDate } from './Hero.styles'
 import Blur from '../Blur/Blur'
 
 
@@ -33,7 +33,7 @@ const Hero = () => {
 						</div>
 					</MediumTitle>
 
-					<div className='festival-date'>
+					<FestivalDate>
 						<div>
 							<span>
 								<NumberCounter end={31} start={20} delay='1' />
@@ -52,7 +52,7 @@ const Hero = () => {
 							</span>
 							<span>rok</span>
 						</div>
-					</div>
+					</FestivalDate>
 					<div className='hero-buttons'>
 						<button className='btn'>Kontakt</button>
 						<button className='btn'>Czytaj więcej</button>

@@ -1,32 +1,4 @@
 
-
-
-
-
-
-
-
-
-.festival-date {
-	display: flex;
-	gap: 2rem;
-}
-
-.festival-date > div {
-	display: flex;
-	flex-direction: column;
-}
-
-.festival-date > div > span:nth-of-type(1) {
-	color: var(--orange);
-	font-size: 2rem;
-}
-
-.festival-date > div > span:nth-of-type(2) {
-	color: var(--gray);
-	text-transform: none;
-}
-
 .hero-buttons {
 	display: flex;
 	gap: 1rem;
@@ -104,19 +76,6 @@
 
 @media screen and (max-width: 900px) {
 
-	.festival-date {
-		align-self: center;
-	}
-
-	.festival-date > div > span:nth-of-type(1) {
-		font-size: large;
-		align-self: center;
-	}
-
-	.festival-date > div > span:nth-of-type(2) {
-		font-size: small;
-		align-self: center;
-	}
 
 	.hero-buttons {
 		justify-content: center;
