@@ -9,4 +9,9 @@ export const BlurStyled = styled.div`
 	border-radius: 50%;
 	filter: blur(212px);
 	z-index: -9;
+
+	@media screen and (max-width: 900px) {
+		width: 10rem;
+		top: 60%;
+	}
 `

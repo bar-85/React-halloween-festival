@@ -8,7 +8,7 @@ import house from '../../assets/house2.png'
 import moon from '../../assets/moon.png'
 import NumberCounter from 'number-counter'
 import { motion } from 'framer-motion'
-import { Wrapper } from './Hero.styles'
+import { Wrapper, LeftSide, RightSide, UpTitle, MediumTitle } from './Hero.styles'
 import Blur from '../Blur/Blur'
 
 
@@ -17,21 +17,21 @@ const Hero = () => {
 		<div>
 			<Wrapper>
 				<Blur />	
-				<div className='left-side'>
+				<LeftSide>
 					<Header />
-					<div className='up-title'>
+					<UpTitle>
 						<motion.div animate={{ x: [8, 238, 8] }} transition={{ duration: 8, type: 'tween', repeat: Infinity }}></motion.div>
 						<span>najlepsza impreza w mieście!</span>
-					</div>
+					</UpTitle>
 
-					<div className='medium-title'>
+					<MediumTitle>
 						<div>
 							<span className='stroke-text'>Halloween</span>
 						</div>
 						<div>
 							<span>Festiwal</span>
 						</div>
-					</div>
+					</MediumTitle>
 
 					<div className='festival-date'>
 						<div>
@@ -58,8 +58,8 @@ const Hero = () => {
 						<button className='btn'>Czytaj więcej</button>
 					</div>
 					<img src={house} alt='' className='house-image' />
-				</div>
-				<div className='right-side'>
+				</LeftSide>
+				<RightSide>
 				
 					<button className='btn'>Kontakt</button>
 					<img src={moon} alt='' className='moon-image' />
@@ -72,7 +72,7 @@ const Hero = () => {
 					<motion.div animate={{ y: [0, 40, 0] }} transition={{ duration: 6, type: 'tween', repeat: Infinity }} className='back-image-motion'>
 						<img src={back} alt='' className='back-image' />
 					</motion.div>
-				</div>
+				</RightSide>
 			</Wrapper>
 			<section>
 				<Footer />
