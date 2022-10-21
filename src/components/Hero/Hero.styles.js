@@ -130,8 +130,6 @@ export const HeroButton = styled.div`
 	gap: 1rem;
 	font-weight: normal;
 
-	@media screen and (max-width: 900px) {
-        justify-content: center;
-    }
+	
 
 `

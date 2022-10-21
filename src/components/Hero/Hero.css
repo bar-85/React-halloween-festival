@@ -74,6 +74,8 @@
 		display: none;
 	}
 
-
+    .right-side > .btn {
+        display: none;
+    }
 
 }
