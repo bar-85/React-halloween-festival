@@ -8,12 +8,14 @@ import house from '../../assets/house2.png'
 import moon from '../../assets/moon.png'
 import NumberCounter from 'number-counter'
 import { motion } from 'framer-motion'
+import { Wrapper, Blur } from './Hero.styles'
+
 
 const Hero = () => {
 	return (
 		<div>
-			<section className='hero'>
-				<div className='blur hero-blur'></div>	
+			<Wrapper>
+				<Blur className={'blur hero-blur'}></Blur>	
 				<div className='left-side'>
 					<Header />
 					<div className='up-title'>
@@ -70,7 +72,7 @@ const Hero = () => {
 						<img src={back} alt='' className='back-image' />
 					</motion.div>
 				</div>
-			</section>
+			</Wrapper>
 			<section>
 				<Footer />
 			</section>
