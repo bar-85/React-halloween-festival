@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-
 export const Wrapper = styled.div`
 	display: flex;
 	justify-content: space-between;
@@ -63,7 +62,5 @@ export const Nav = styled.div`
 		li {
 			margin-top: 2.5rem;
 		}
-
-	
 	}
 `
