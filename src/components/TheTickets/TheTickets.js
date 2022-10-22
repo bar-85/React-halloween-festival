@@ -1,25 +1,24 @@
 import React from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
-import { Wrapper } from '../ItemStyles/ItemStyles.styles'
-import { LeftSideTickets, RightSideTickets } from '../TheTickets/TheTickets.styles'
-
+import { Wrapper, LeftSide, RightSide } from '../ItemStyles/ItemStyles.styles'
+import ButtonContactWhite from '../Buttons/ButtonContactWhite'
 
 const TheTickets = () => {
 	return (
 		<div>
 			<Wrapper>
-					<LeftSideTickets>
-						<Header />
-					</LeftSideTickets>
-					<RightSideTickets>
-
-					</RightSideTickets>
+				<LeftSide>
+					<Header />
+					Ticket
+				</LeftSide>
+				<RightSide>
+					<ButtonContactWhite />
+				</RightSide>
 			</Wrapper>
 			<section>
 				<Footer />
 			</section>
-			
 		</div>
 	)
 }
