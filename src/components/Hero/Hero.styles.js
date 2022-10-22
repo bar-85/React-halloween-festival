@@ -194,7 +194,7 @@ export const FestivalDate = styled.div`
 	}
 
 	div > span:nth-of-type(2) {
-		color: var(--gray);
+		color: #b7adad;
 		text-transform: none;
 	}
 
