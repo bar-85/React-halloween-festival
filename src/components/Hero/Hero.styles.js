@@ -1,55 +1,38 @@
 import styled from 'styled-components'
 
-export const Wrapper = styled.div`
-	display: flex;
-	justify-content: space-between;
-
-	@media screen and (max-width: 900px) {
-		flex-direction: column;
-	}
-`
-export const LeftSide = styled.div`
-	padding: 3rem;
-	padding-top: 0.5rem;
-	flex: 3.5;
-	display: flex;
-	gap: 1.5rem;
-	flex-direction: column;
-
+export const ImgLeft = styled.div`
 	.house-image {
 		position: absolute;
 		top: 13rem;
 		left: 30%;
 		height: 28rem;
+	
 
-		@media screen and (max-width: 900px) {
-			&.house-image {
-				position: relative;
-				align-self: center;
-				width: 23rem;
-				height: 18rem;
-				top: 13rem;
-				left: 0rem;
-				z-index: -3;
-			}
+	@media screen and (max-width: 900px) {
+		&.house-image {
+			position: relative;
+			align-self: center;
+			width: 23rem;
+			height: 18rem;
+			top: 13rem;
+			left: -3.5rem;
+			z-index: -3;
 		}
+	}
 
-		@media screen and (max-width: 320px) {
-			&.house-image { 
-				width: 20rem;
-				height: 16rem;
-				top: 12rem;
-				left: -1rem;
-			}
+	@media screen and (max-width: 320px) {
+		&.house-image {
+			width: 20rem;
+			height: 16rem;
+			top: 12rem;
+			left: -3.5rem;
+		}
 	}
-	}
+}
 `
 
-export const RightSide = styled.div`
-	flex: 1;
-	position: relative;
-	background-color: rgba(0, 0, 0, 0.26);
 
+export const ImgRight = styled.div`
 	.back-image {
 		position: absolute;
 		top: 10rem;
@@ -67,26 +50,48 @@ export const RightSide = styled.div`
 	}
 
 	.bat-image {
-	position: absolute;
-	left: -230%;
-	top: 7rem;
-	width: 10rem;
-	height: 10rem;
-}
+		position: absolute;
+		left: -230%;
+		top: 7rem;
+		width: 10rem;
+		height: 10rem;
+	}
 
 	@media screen and (max-width: 900px) {
-		position: relative;
-		background: none;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 
 		.back-image {
 			position: relative;
 			height: 7rem;
 			width: 10rem;
-			left: -30%;
-			top: -16rem;
+			left: 60%;
+			top: -30rem;
+			z-index: 2;
+		}
+
+		.moon-image {
+			position: relative;
+			align-self: center;
+			width: 8rem;
+			height: 8rem;
+			left: 8rem;
+			top: -17rem;
+			z-index: -1;
+		}
+
+		.bat-image {
+			position: relative;
+			height: 7rem;
+			width: 7rem;
+			left: -59%;
+			top: -21rem;
+			z-index: 2;
+		}
+	}
+
+	@media screen and (max-width: 320px) {
+		.back-image {
+			left: 41%;
+			top: -30rem;
 			z-index: 2;
 		}
 
@@ -95,7 +100,7 @@ export const RightSide = styled.div`
 			align-self: center;
 			width: 7rem;
 			height: 7rem;
-			left: 15rem;
+			left: 8rem;
 			top: -18rem;
 			z-index: -1;
 		}
@@ -104,8 +109,8 @@ export const RightSide = styled.div`
 			position: relative;
 			height: 7rem;
 			width: 7rem;
-			left: -65%;
-			top: -13rem;
+			left: -47%;
+			top: -20rem;
 			z-index: 2;
 		}
 	}

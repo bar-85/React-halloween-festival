@@ -7,18 +7,18 @@ import house from '../../assets/house2.png'
 import moon from '../../assets/moon.png'
 import NumberCounter from 'number-counter'
 import { motion } from 'framer-motion'
-import { Wrapper, LeftSide, RightSide, UpTitle, MediumTitle, FestivalDate, HeroButton } from './Hero.styles'
+import { UpTitle, MediumTitle, FestivalDate, ImgLeft, ImgRight, HeroButton } from './Hero.styles'
+import { Wrapper, LeftSide, RightSide } from '../ItemStyles/ItemStyles.styles'
 import Blur from '../Blur/Blur'
 import ButtonContact from '../Buttons/ButtonContact'
 import ButtonMore from '../Buttons/ButtonMore'
 import ButtonContactWhite from '../Buttons/ButtonContactWhite'
 
-
 const Hero = () => {
 	return (
 		<div>
 			<Wrapper>
-				<Blur />	
+				<Blur />
 				<LeftSide>
 					<Header />
 					<UpTitle>
@@ -59,22 +59,30 @@ const Hero = () => {
 						<ButtonContact />
 						<ButtonMore />
 					</HeroButton>
-					<img src={house} alt='' className='house-image' />
+					<ImgLeft>
+						<img src={house} alt='' className='house-image' />
+					</ImgLeft>
 				</LeftSide>
 				<RightSide>
-					<ButtonContactWhite className='btn-white'/>
-					<img src={moon} alt='' className='moon-image' />
-					<motion.div
-						animate={{ y: [0, 10, 7, 15, 9, 12, 0] }}
-						transition={{ duration: 5, type: 'tween', repeat: Infinity }}
-						className='bat-image-motion'>
-						<img src={bat} alt='' className='bat-image' />
-					</motion.div>
-					<motion.div animate={{ y: [0, 40, 0] }} transition={{ duration: 6, type: 'tween', repeat: Infinity }} className='back-image-motion'>
-						<img src={back} alt='' className='back-image' />
-					</motion.div>
+					<ButtonContactWhite className='btn-white' />
+					<ImgRight>
+						<img src={moon} alt='' className='moon-image' />
+						<motion.div
+							animate={{ y: [0, 10, 7, 15, 9, 12, 0] }}
+							transition={{ duration: 5, type: 'tween', repeat: Infinity }}
+							className='bat-image-motion'>
+							<img src={bat} alt='' className='bat-image' />
+						</motion.div>
+						<motion.div animate={{ y: [0, 40, 0] }} transition={{ duration: 6, type: 'tween', repeat: Infinity }} className='back-image-motion'>
+							<img src={back} alt='' className='back-image' />
+						</motion.div>
+					</ImgRight>
 				</RightSide>
 			</Wrapper>
+			<section>
+				<h1>Kupa sraka</h1>
+				<h2> Sraka</h2>
+			</section>
 			<section>
 				<Footer />
 			</section>
