@@ -1,5 +1,4 @@
 import React from 'react'
-import './Hero.css'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import back from '../../assets/czarownica4.png'
@@ -63,7 +62,7 @@ const Hero = () => {
 					<img src={house} alt='' className='house-image' />
 				</LeftSide>
 				<RightSide>
-					<ButtonContactWhite />
+					<ButtonContactWhite className='btn-white'/>
 					<img src={moon} alt='' className='moon-image' />
 					<motion.div
 						animate={{ y: [0, 10, 7, 15, 9, 12, 0] }}

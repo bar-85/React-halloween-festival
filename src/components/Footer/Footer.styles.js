@@ -29,6 +29,11 @@ export const Wrapper = styled.div`
 	@media screen and (max-width: 900px) {
 		font-size: small;
 	}
+
+	@media screen and (max-width: 320px) {
+		padding: 1rem 0.1rem;
+		font-size: 0.7rem;
+	}
 `
 export const Container = styled.div`
 	max-width: 1240px;
@@ -44,5 +49,7 @@ export const BottomText = styled.div`
 		margin-bottom: 1rem;
 	}
 
-	
+	@media screen and (max-width: 320px) {
+		padding-top: 1.5rem;
+	}
 `

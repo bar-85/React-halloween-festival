@@ -41,4 +41,8 @@ export const SocialIconStyles = styled.div`
 	@media screen and (max-width: 900px) {
 		margin-top: 2rem;
 	}
+
+	@media screen and (max-width: 320px) {
+		display: none;
+	}
 `

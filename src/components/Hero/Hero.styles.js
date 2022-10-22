@@ -15,6 +15,25 @@ export const LeftSide = styled.div`
 	display: flex;
 	gap: 1.5rem;
 	flex-direction: column;
+
+	.house-image {
+		position: absolute;
+		top: 13rem;
+		left: 30%;
+		height: 28rem;
+
+		@media screen and (max-width: 900px) {
+			&.house-image {
+				position: relative;
+				align-self: center;
+				width: 23rem;
+				height: 18rem;
+				top: 13rem;
+				left: 0rem;
+				z-index: -3;
+			}
+		}
+	}
 `
 
 export const RightSide = styled.div`
@@ -22,12 +41,64 @@ export const RightSide = styled.div`
 	position: relative;
 	background-color: rgba(0, 0, 0, 0.26);
 
+	.back-image {
+		position: absolute;
+		top: 10rem;
+		left: -60%;
+		height: 13rem;
+		z-index: 3;
+	}
+
+	.moon-image {
+		position: absolute;
+		top: 5rem;
+		left: -20%;
+		height: 13rem;
+		z-index: 0;
+	}
+
+	.bat-image {
+	position: absolute;
+	left: -230%;
+	top: 7rem;
+	width: 10rem;
+	height: 10rem;
+}
+
 	@media screen and (max-width: 900px) {
 		position: relative;
 		background: none;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		.back-image {
+			position: relative;
+			height: 7rem;
+			width: 10rem;
+			left: -30%;
+			top: -16rem;
+			z-index: 2;
+		}
+
+		.moon-image {
+			position: relative;
+			align-self: center;
+			width: 7rem;
+			height: 7rem;
+			left: 15rem;
+			top: -18rem;
+			z-index: -1;
+		}
+
+		.bat-image {
+			position: relative;
+			height: 7rem;
+			width: 7rem;
+			left: -65%;
+			top: -13rem;
+			z-index: 2;
+		}
 	}
 `
 
@@ -60,10 +131,14 @@ export const UpTitle = styled.div`
 	}
 
 	@media screen and (max-width: 900px) {
-		margin-top: 0;
+		margin: 0 0 1rem 0;
 		font-size: small;
 		align-self: center;
 		transform: scale(0.8);
+	}
+
+	@media screen and (max-width: 320px) {
+		font-size: 0.7rem;
 	}
 `
 
@@ -89,6 +164,10 @@ export const MediumTitle = styled.div`
 		align-items: center;
 		justify-content: center;
 	}
+
+	@media screen and (max-width: 320px) {
+		font-size: 2.5rem;
+	}
 `
 
 export const FestivalDate = styled.div`
@@ -112,6 +191,7 @@ export const FestivalDate = styled.div`
 
 	@media screen and (max-width: 900px) {
 		align-self: center;
+		margin-top: 2rem;
 
 		div > span:nth-of-type(1) {
 			font-size: large;
@@ -130,6 +210,11 @@ export const HeroButton = styled.div`
 	gap: 1rem;
 	font-weight: normal;
 
-	
-
+	@media screen and (max-width: 900px) {
+		justify-content: center;
+		margin-top: 2rem;
+	}
+	@media screen and (max-width: 320px) {
+		margin-top: 1rem;
+	}
 `
