@@ -33,6 +33,15 @@ export const LeftSide = styled.div`
 				z-index: -3;
 			}
 		}
+
+		@media screen and (max-width: 320px) {
+			&.house-image { 
+				width: 20rem;
+				height: 16rem;
+				top: 12rem;
+				left: -1rem;
+			}
+	}
 	}
 `
 
