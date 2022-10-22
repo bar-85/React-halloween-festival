@@ -1,4 +1,3 @@
-import './App.css'
 import Hero from './components/Hero/Hero'
 import TheTickets from './components/TheTickets/TheTickets'
 import Quiz from './components/Quiz/Quiz'
