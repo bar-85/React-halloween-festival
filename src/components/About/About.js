@@ -25,7 +25,7 @@ const Services = () => {
           <br />
           Zarejestruj się na Halloween Festival 2023
         </spane>
-        <a href={'/'} download>
+        <a href={'/'} >
           <ButtonContact />
         </a>
         <Blur />
