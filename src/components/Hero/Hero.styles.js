@@ -1,112 +1,99 @@
 import styled from 'styled-components'
 
-export const ImgLeft = styled.div`
+export const ImgRight = styled.div`
 	.house-image {
 		position: absolute;
-		top: 13rem;
-		left: 30%;
+		top: 7rem;
+		left: -200%;
 		height: 28rem;
-
-		@media screen and (max-width: 900px) {
-			&.house-image {
-				position: relative;
-				align-self: center;
-				width: 23rem;
-				height: 18rem;
-				top: 13rem;
-				z-index: -3;
-			}
-		}
-
-		@media screen and (max-width: 667px) {
-			&.house-image {
-				width: 20rem;
-				height: 16rem;
-				top: 12rem;
-				left: -7%;
-			}
-		}
-
-		@media screen and (max-width: 320px) {
-			&.house-image {
-				width: 20rem;
-				height: 16rem;
-				top: 12rem;
-				left: -25%;
-			}
-		}
+		z-index: -1;
 	}
-`
 
-export const ImgRight = styled.div`
-	.back-image {
+	.witch-image {
 		position: absolute;
-		top: 10rem;
-		left: -60%;
-		height: 13rem;
+		top: 2rem;
+		left: -45%;
+		height: 10rem;
 		z-index: 3;
 	}
 
 	.moon-image {
 		position: absolute;
-		top: 5rem;
+		top: 0.5rem;
 		left: -20%;
-		height: 13rem;
+		height: 12rem;
 		z-index: 0;
 	}
 
 	.bat-image {
 		position: absolute;
-		left: -230%;
-		top: 7rem;
+		left: -180%;
+		top: 1rem;
 		width: 10rem;
 		height: 10rem;
+		z-index: -3;
 	}
 
 	@media screen and (max-width: 900px) {
-		.back-image {
+		.house-image {
+			position: relative;
+			align-self: center;
+			width: 23rem;
+			height: 18rem;
+			top: 11rem;
+			left: -2%;
+			z-index: -3;
+		}
+
+		.witch-image {
 			position: relative;
 			height: 7rem;
 			width: 10rem;
-			left: 60%;
-			top: -30rem;
+			left: 46%;
+			top: -24rem;
 			z-index: 2;
 		}
 
 		.moon-image {
-			position: relative;
-			align-self: center;
-			width: 8rem;
-			height: 8rem;
-			left: 8rem;
-			top: -17rem;
-			z-index: -1;
+			width: 10rem;
+			height:10rem;
+			left: 13rem;
+			top: 1rem;
+			z-index: -6;
 		}
 
 		.bat-image {
 			position: relative;
 			height: 7rem;
 			width: 7rem;
-			left: -59%;
-			top: -21rem;
-			z-index: 2;
+			left: 6%;
+			top: -11rem;
+			z-index: 3;
 		}
 	}
 
+
 	@media screen and (max-width: 320px) {
-		.back-image {
-			left: 41%;
-			top: -30rem;
+		.house-image {
+			width: 20rem;
+			height: 16rem;
+			top: 7rem;
+			left: -2%;
+		}
+
+		.witch-image {
+			left: 45%;
+			top: -25rem;
 			z-index: 2;
 		}
 
 		.moon-image {
 			position: relative;
 			align-self: center;
-			width: 7rem;
-			height: 7rem;
-			left: 8rem;
-			top: -18rem;
+			width: 10rem;
+			height: 10rem;
+			left: 10rem;
+			top: 3rem;
 			z-index: -1;
 		}
 
@@ -114,8 +101,8 @@ export const ImgRight = styled.div`
 			position: relative;
 			height: 7rem;
 			width: 7rem;
-			left: -47%;
-			top: -20rem;
+			left: 4%;
+			top: -14rem;
 			z-index: 2;
 		}
 	}

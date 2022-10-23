@@ -1,18 +1,17 @@
 import React from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
-import back from '../../assets/czarownica4.png'
+import witch from '../../assets/czarownica4.png'
 import bat from '../../assets/bat2.png'
 import house from '../../assets/house2.png'
 import moon from '../../assets/moon.png'
 import NumberCounter from 'number-counter'
 import { motion } from 'framer-motion'
-import { UpTitle, MediumTitle, FestivalDate, ImgLeft, ImgRight, HeroButton } from './Hero.styles'
+import { UpTitle, MediumTitle, FestivalDate, ImgRight, HeroButton } from './Hero.styles'
 import { Wrapper, LeftSide, RightSide } from '../ItemStyles/ItemStyles.styles'
 import Blur from '../Blur/Blur'
 import ButtonContact from '../Buttons/ButtonContact'
 import ButtonMore from '../Buttons/ButtonMore'
-
 
 const Hero = () => {
 	return (
@@ -21,7 +20,6 @@ const Hero = () => {
 			<Wrapper>
 				<Blur />
 				<LeftSide>
-					
 					<UpTitle>
 						<motion.div animate={{ x: [8, 238, 8] }} transition={{ duration: 8, type: 'tween', repeat: Infinity }}></motion.div>
 						<span>najlepsza impreza w mieście!</span>
@@ -60,14 +58,11 @@ const Hero = () => {
 						<ButtonContact />
 						<ButtonMore />
 					</HeroButton>
-					<ImgLeft>
-						<img src={house} alt='' className='house-image' />
-					</ImgLeft>
 				</LeftSide>
 				<RightSide>
-					
 					<ImgRight>
 						<img src={moon} alt='' className='moon-image' />
+						<img src={house} alt='' className='house-image' />
 						<motion.div
 							animate={{ y: [0, 10, 7, 15, 9, 12, 0] }}
 							transition={{ duration: 5, type: 'tween', repeat: Infinity }}
@@ -75,7 +70,7 @@ const Hero = () => {
 							<img src={bat} alt='' className='bat-image' />
 						</motion.div>
 						<motion.div animate={{ y: [0, 40, 0] }} transition={{ duration: 6, type: 'tween', repeat: Infinity }} className='back-image-motion'>
-							<img src={back} alt='' className='back-image' />
+							<img src={witch} alt='' className='witch-image' />
 						</motion.div>
 					</ImgRight>
 				</RightSide>

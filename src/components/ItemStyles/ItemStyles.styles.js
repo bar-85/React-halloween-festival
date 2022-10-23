@@ -12,18 +12,17 @@ export const Wrapper = styled.div`
 export const LeftSide = styled.div`
 	padding: 3rem;
 	padding-top: 0.5rem;
-	flex: 3.5;
+	flex: 2.8;
 	display: flex;
 	gap: 1.5rem;
 	flex-direction: column;
-
-
 `
 
 export const RightSide = styled.div`
 	flex: 1;
 	position: relative;
-	background-color: rgba(0, 0, 0, 0.26);
+	background-color: rgba(0, 0, 0, 0.144);
+	border-radius: 10px;
 
     @media screen and (max-width: 900px) {
 		position: relative;
