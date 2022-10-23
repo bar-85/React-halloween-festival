@@ -1,0 +1,73 @@
+
+import "./About.css";
+import Card from "../Card/Card";
+import { motion } from "framer-motion";
+import ButtonContact from "../Buttons/ButtonContact";
+import Blur from "../Blur/Blur";
+
+
+
+const Services = () => {
+  const transition = {
+    duration: 1,
+    type: "spring",
+  };
+
+  return (
+    <div className="services" id="services">
+
+      <div className="awesome">
+ 
+        <span>UPIORNE ZABAWY</span>
+        <span>których nie zapomnisz!</span>
+        <spane>
+        Przygotuj się na noc, której nie zapomnisz!
+          <br />
+          Zarejestruj się na Halloween Festival 2023
+        </spane>
+        <a href={'/'} download>
+          <ButtonContact />
+        </a>
+        <Blur />
+      </div>
+  
+      <div className="cards">
+
+        <motion.div
+          initial={{ left: "40rem" }}
+          whileInView={{ left: "30rem" }}
+          transition={transition}
+        >
+          <Card
+            emoji={''}
+          />
+        </motion.div>
+
+        <motion.div
+          initial={{ left: "3rem", top: "12rem" }}
+          whileInView={{ left: "8rem" }}
+          transition={transition}
+        >
+          <Card
+            emoji={""}
+          />
+        </motion.div>
+
+        <motion.div
+          initial={{ top: "19rem", left: "40rem" }}
+          whileInView={{ left: "28rem" }}
+          transition={transition}
+        >
+          <Card
+            emoji={''}
+
+            color="rgba(252, 166, 31, 0.45)"
+          />
+        </motion.div>
+       
+      </div>
+    </div>
+  );
+};
+
+export default Services;

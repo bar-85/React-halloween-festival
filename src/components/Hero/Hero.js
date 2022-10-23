@@ -12,6 +12,7 @@ import { Wrapper, LeftSide, RightSide } from '../ItemStyles/ItemStyles.styles'
 import Blur from '../Blur/Blur'
 import ButtonContact from '../Buttons/ButtonContact'
 import ButtonMore from '../Buttons/ButtonMore'
+import About from '../About/About'
 
 const Hero = () => {
 	return (
@@ -76,8 +77,10 @@ const Hero = () => {
 				</RightSide>
 			</Wrapper>
 			<section>
-				<h1>Kupa sraka</h1>
-				<h2> Sraka</h2>
+				<Wrapper>
+					<About />
+				</Wrapper>
+				
 			</section>
 			<section>
 				<Footer />
