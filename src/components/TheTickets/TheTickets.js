@@ -7,13 +7,11 @@ import ButtonContactWhite from '../Buttons/ButtonContactWhite'
 const TheTickets = () => {
 	return (
 		<div>
+			<Header />
 			<Wrapper>
-				<LeftSide>
-					<Header />
-					Ticket
-				</LeftSide>
+				<LeftSide>Ticket</LeftSide>
 				<RightSide>
-					<ButtonContactWhite />
+					
 				</RightSide>
 			</Wrapper>
 			<section>

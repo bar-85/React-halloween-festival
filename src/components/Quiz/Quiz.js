@@ -1,20 +1,17 @@
 import React from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
-import { Wrapper, LeftSide, RightSide} from '../ItemStyles/ItemStyles.styles'
+import { Wrapper, LeftSide, RightSide } from '../ItemStyles/ItemStyles.styles'
 import ButtonContactWhite from '../Buttons/ButtonContactWhite'
 
 const Quiz = () => {
 	return (
 		<div>
+			<Header />
 			<Wrapper>
-				<LeftSide>
-					<Header />
-
-          Quiz
-				</LeftSide>
+				<LeftSide>Quiz</LeftSide>
 				<RightSide>
-					<ButtonContactWhite />
+					
 				</RightSide>
 			</Wrapper>
 			<section>

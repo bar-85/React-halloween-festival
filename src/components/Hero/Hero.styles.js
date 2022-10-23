@@ -6,40 +6,37 @@ export const ImgLeft = styled.div`
 		top: 13rem;
 		left: 30%;
 		height: 28rem;
-	
 
-	@media screen and (max-width: 900px) {
-		&.house-image {
-			position: relative;
-			align-self: center;
-			width: 23rem;
-			height: 18rem;
-			top: 13rem;
-			
-			z-index: -3;
+		@media screen and (max-width: 900px) {
+			&.house-image {
+				position: relative;
+				align-self: center;
+				width: 23rem;
+				height: 18rem;
+				top: 13rem;
+				z-index: -3;
+			}
+		}
+
+		@media screen and (max-width: 667px) {
+			&.house-image {
+				width: 20rem;
+				height: 16rem;
+				top: 12rem;
+				left: -7%;
+			}
+		}
+
+		@media screen and (max-width: 320px) {
+			&.house-image {
+				width: 20rem;
+				height: 16rem;
+				top: 12rem;
+				left: -25%;
+			}
 		}
 	}
-
-	@media screen and (max-width: 667px) {
-		&.house-image {
-			width: 20rem;
-			height: 16rem;
-			top: 12rem;
-			left: -7%;
-		}
-	}
-
-	@media screen and (max-width: 320px) {
-		&.house-image {
-			width: 20rem;
-			height: 16rem;
-			top: 12rem;
-			left: -25%;
-		}
-	}
-}
 `
-
 
 export const ImgRight = styled.div`
 	.back-image {
@@ -67,7 +64,6 @@ export const ImgRight = styled.div`
 	}
 
 	@media screen and (max-width: 900px) {
-
 		.back-image {
 			position: relative;
 			height: 7rem;

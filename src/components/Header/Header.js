@@ -5,6 +5,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { Hamburger, Wrapper, Nav } from './Header.styles'
 import LogoHeader from '../Logo/LogoHeader'
 import SocialIcon from '../SocialIcon/SocialIcon'
+import ButtonContactWhite from '../Buttons/ButtonContactWhite'
 
 
 
@@ -31,7 +32,8 @@ const Header = () => {
 					<li>Quiz</li>
 				</Link>
 				<SocialIcon />
-			</Nav>
+				<ButtonContactWhite className='btn-white' />	
+			</Nav>	
 		</Wrapper>
 	)
 }

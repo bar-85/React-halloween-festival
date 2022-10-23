@@ -12,15 +12,16 @@ import { Wrapper, LeftSide, RightSide } from '../ItemStyles/ItemStyles.styles'
 import Blur from '../Blur/Blur'
 import ButtonContact from '../Buttons/ButtonContact'
 import ButtonMore from '../Buttons/ButtonMore'
-import ButtonContactWhite from '../Buttons/ButtonContactWhite'
+
 
 const Hero = () => {
 	return (
 		<div>
+			<Header />
 			<Wrapper>
 				<Blur />
 				<LeftSide>
-					<Header />
+					
 					<UpTitle>
 						<motion.div animate={{ x: [8, 238, 8] }} transition={{ duration: 8, type: 'tween', repeat: Infinity }}></motion.div>
 						<span>najlepsza impreza w mieście!</span>
@@ -64,7 +65,7 @@ const Hero = () => {
 					</ImgLeft>
 				</LeftSide>
 				<RightSide>
-					<ButtonContactWhite className='btn-white' />
+					
 					<ImgRight>
 						<img src={moon} alt='' className='moon-image' />
 						<motion.div

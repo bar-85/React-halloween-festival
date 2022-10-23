@@ -1,14 +1,10 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.button`
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	right: 3rem;
-	top: 3rem;
+
 	color: white;
 	background-color: transparent;
+	margin: 0 2rem 0 1rem;
 	width: 8rem;
 	border: 2px solid white;
 	padding: 0.5rem;
