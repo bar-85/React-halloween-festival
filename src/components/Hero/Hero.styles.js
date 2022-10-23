@@ -20,8 +20,8 @@ export const ImgRight = styled.div`
 	.moon-image {
 		position: absolute;
 		top: 0.5rem;
-		left: -20%;
-		height: 12rem;
+		left: -25%;
+		height: 15rem;
 		z-index: 0;
 	}
 

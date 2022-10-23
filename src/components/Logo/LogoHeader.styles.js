@@ -10,13 +10,13 @@ export const LogoHeaderStyled = styled.div`
 
 	@media screen and (max-width: 900px) {
 		img {
-			margin-left: -2rem;
+			margin-left: 1rem;
 		}
 	}
 
 	@media screen and (max-width: 320px) {
 		img {
-			margin-left: -2rem;
+			margin-left: 1rem;
 		}
 	}
 `
