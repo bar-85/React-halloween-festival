@@ -45,7 +45,7 @@ export const Nav = styled.div`
 			top: 100px;
 			flex-direction: column;
 			background-color: rgba(76, 19, 106, 0.966);
-			width: 50%;
+			width: 52%;
 			height: auto;
 			z-index: 999;
 			border-top-left-radius: 40px;
