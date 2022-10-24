@@ -1,4 +1,3 @@
-import './About.css'
 import Card from '../Card/Card'
 import { motion } from 'framer-motion'
 import ButtonContact from '../Buttons/ButtonContact'
