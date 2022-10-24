@@ -1,12 +1,11 @@
 import React from "react";
-import "./Card.css";
+import { CardStyled } from "./Card.styles";
 
-const Card = ({emoji, color}) => {
+const Card = ({picture}) => {
   return (
-    <div className="card" style={{borderColor: 'orange'}}> 
-      <img src={emoji} alt="" />
-      <button className="c-button">Bilety</button>
-    </div>
+    <CardStyled > 
+      <img src={picture} alt="halloween" />
+    </CardStyled>
   );
 };
 

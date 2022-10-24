@@ -4,7 +4,9 @@ import Card from "../Card/Card";
 import { motion } from "framer-motion";
 import ButtonContact from "../Buttons/ButtonContact";
 import Blur from "../Blur/Blur";
-
+import imgOne from "../../assets/1.jpg"
+import imgTwo from "../../assets/2.jpg"
+import imgThree from "../../assets/3.jpg"
 
 
 const Services = () => {
@@ -21,7 +23,7 @@ const Services = () => {
         <span>UPIORNE ZABAWY</span>
         <span>których nie zapomnisz!</span>
         <spane>
-        Przygotuj się na noc, której nie zapomnisz!
+        Przygotuj się na noc, pełną wrażeń!
           <br />
           Zarejestruj się na Halloween Festival 2023
         </spane>
@@ -39,7 +41,7 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={''}
+            picture={imgOne}
           />
         </motion.div>
 
@@ -49,7 +51,7 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={""}
+            picture={imgThree}
           />
         </motion.div>
 
@@ -59,7 +61,7 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={''}
+            picture={imgTwo}
 
             color="rgba(252, 166, 31, 0.45)"
           />
