@@ -111,9 +111,18 @@ export const Answer = styled.div`
 		align-items: center;
 		border: 1px solid #ffbb002c;
 		cursor: pointer;
+
+	
 	}
 	button:hover {
 		background-color: #a87317;
-	}
+	}	
     
+    /* &.correct {
+			background-color: #2f922f;
+		}
+
+		&.incorrect {
+			background-color: #ff3333;
+		} */
 `
