@@ -3,6 +3,7 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import { QuizStyled, AppStyled, Title, Question, QuestionTitle, Answer, ScoreTitle } from './Quiz.styles'
 import backImg from '../../assets/back.png'
+import { getMouseEventOptions } from '@testing-library/user-event/dist/utils'
 
 const Quiz = () => {
 	const questions = [
@@ -95,14 +96,17 @@ const Quiz = () => {
 				<AppStyled>
 					{showScore ? (
 						<ScoreTitle>
-							Zdobyłeś <span>{score}</span> na <span>{questions.length}</span> możliwych punktów
-							
+							Zdobyłeś <span>{score}</span> na <span>{questions.length}</span> możliwych punktów! 
+							<div>
+								({(score / questions.length).toFixed(2) * 100}%)
+							</div>
+
+							<div>
 								<p>Twój ostatni wynik: {recordedScore}</p>
-							
+							</div>
 							<div>
 								<button onClick={resetStateClick}>Powtórz quiz</button>
 							</div>
-							
 						</ScoreTitle>
 					) : (
 						<>
