@@ -3,7 +3,7 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import { QuizStyled, AppStyled, Title, Question, QuestionTitle, Answer, ScoreTitle } from './Quiz.styles'
 import backImg from '../../assets/back.png'
-import { getMouseEventOptions } from '@testing-library/user-event/dist/utils'
+
 
 const Quiz = () => {
 	const questions = [
