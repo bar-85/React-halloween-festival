@@ -65,7 +65,7 @@ export const Title = styled.div`
 		color: #ffffff;
 		font-size: 2.5rem;
 		font-weight: bold;
-		margin-right: 2rem;
+		margin-right: 1rem;
 	}
 
 	span:nth-child(2) {
@@ -96,7 +96,7 @@ export const Title = styled.div`
 
 export const Question = styled.div`
 	font-size: 1.5rem;
-	color: white;
+	color: #ff00ee;
 
 	@media screen and (max-width: 900px) {
 		font-size: 1.5rem;
@@ -109,7 +109,15 @@ export const Question = styled.div`
 
 export const QuestionTitle = styled.div`
 	font-size: 1.5rem;
-	color: #ff0134;
+	color: white;
+
+	@media screen and (max-width: 900px) {
+		font-size: 1.2rem;
+	}
+
+	@media screen and (max-width: 320px) {
+		font-size: 1rem;
+	}
 `
 
 export const Answer = styled.div`
@@ -121,7 +129,7 @@ export const Answer = styled.div`
 
 	button {
 		width: 80%;
-		font-size: 16px;
+		font-size: 1rem;
 		color: #ffffff;
 		background-color: #2c1803c4;
 		border-radius: 15px;
@@ -138,6 +146,41 @@ export const Answer = styled.div`
 			:hover {
 				background-color: #2c1803c4;
 			}
+		}
+	}
+`
+
+export const ScoreTitle = styled.div`
+	color: white;
+	font-size: 1rem;
+
+	span {
+		color: orange;
+	}
+
+	p {
+		margin: 2rem;
+	}
+
+	div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	button {
+		width: 50%;
+		font-size: 1rem;
+		color: orange;
+		background-color: #2c1803c4;
+		border-radius: 15px;
+		padding: 5px;
+		align-items: center;
+		border: 1px solid #ffbb00;
+		cursor: pointer;
+
+		:hover {
+			background-color: #a8731743;
 		}
 	}
 `

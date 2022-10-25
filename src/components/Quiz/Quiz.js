@@ -1,65 +1,63 @@
 import React, { useState } from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
-import { QuizStyled, AppStyled, Title, Question, QuestionTitle, Answer } from './Quiz.styles'
+import { QuizStyled, AppStyled, Title, Question, QuestionTitle, Answer, ScoreTitle } from './Quiz.styles'
 import backImg from '../../assets/back.png'
-
-
 
 const Quiz = () => {
 	const questions = [
 		{
-			questionText: 'Ile lat ma Pchełka',
+			questionText: 'Kiedy obchodzimy Halloween?',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '3', isCorrect: false },
-				{ answerText: '4', isCorrect: true },
-				{ answerText: '5', isCorrect: false },
+				{ answerText: '1 kwietnia', isCorrect: false },
+				{ answerText: '2 listopada', isCorrect: false },
+				{ answerText: '31 października', isCorrect: true },
+				{ answerText: '6 grudnia', isCorrect: false },
 			],
 		},
 		{
-			questionText: '2 pyt',
+			questionText: 'Co jest symbolem Halloween?',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '2', isCorrect: true },
-				{ answerText: '3', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
+				{ answerText: 'Bób', isCorrect: false },
+				{ answerText: 'Dynia', isCorrect: true },
+				{ answerText: 'Gruszka', isCorrect: false },
+				{ answerText: 'Śliwka', isCorrect: false },
 			],
 		},
 		{
-			questionText: '3pyt',
+			questionText: 'Halloween najpopularniejsze jest w...?',
 			answerOptions: [
-				{ answerText: '1', isCorrect: true },
-				{ answerText: '2', isCorrect: false },
-				{ answerText: '3', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
+				{ answerText: 'w Polsce', isCorrect: false },
+				{ answerText: 'we Francji', isCorrect: false },
+				{ answerText: 'w USA', isCorrect: true },
+				{ answerText: 'w Turcji', isCorrect: false },
 			],
 		},
 		{
-			questionText: '4pyt',
+			questionText: 'Co zbierają dzieci w Halloween?',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: 'pieniądze', isCorrect: false },
+				{ answerText: 'kukurydzę', isCorrect: false },
+				{ answerText: 'narkotyki', isCorrect: false },
+				{ answerText: 'słodycze', isCorrect: true },
 			],
 		},
 		{
-			questionText: '5pyt',
+			questionText: 'Cukierek albo...???',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: 'gorączka', isCorrect: false },
+				{ answerText: 'granat', isCorrect: false },
+				{ answerText: 'psikus', isCorrect: true },
+				{ answerText: 'pizza', isCorrect: false },
 			],
 		},
 		{
-			questionText: '6pyt',
+			questionText: 'Polski odpowiednik Halloween?',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: 'Wielkanoc', isCorrect: false },
+				{ answerText: 'Andrzejki', isCorrect: false },
+				{ answerText: 'Boże Narodzenie', isCorrect: false },
+				{ answerText: 'Zaduszki', isCorrect: true },
 			],
 		},
 	]
@@ -78,9 +76,7 @@ const Quiz = () => {
 
 	const handleAnswerButtonClick = isCorrect => {
 		if (isCorrect === true) {
-			
 			setScore(score + 1)
-			
 		}
 
 		const nextQuestion = currentQuestion + 1
@@ -98,14 +94,16 @@ const Quiz = () => {
 				<img src={backImg} alt='' className='backImg' />
 				<AppStyled>
 					{showScore ? (
-						<Title>
-							{' '}
-							Zdobyłeś {score} na {questions.length} możliwych punktów
-							<div>
+						<ScoreTitle>
+							Zdobyłeś <span>{score}</span> na <span>{questions.length}</span> możliwych punktów
+							
 								<p>Twój ostatni wynik: {recordedScore}</p>
+							
+							<div>
+								<button onClick={resetStateClick}>Powtórz quiz</button>
 							</div>
-							<button  onClick={resetStateClick}>Retry</button>
-						</Title>
+							
+						</ScoreTitle>
 					) : (
 						<>
 							<Title>
@@ -119,10 +117,7 @@ const Quiz = () => {
 
 							<Answer>
 								{questions[currentQuestion].answerOptions.map(answerOption => (
-									<button 
-										onClick={() => handleAnswerButtonClick(answerOption.isCorrect)}>
-										{answerOption.answerText}
-									</button>
+									<button onClick={() => handleAnswerButtonClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
 								))}
 							</Answer>
 						</>
