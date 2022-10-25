@@ -56,22 +56,22 @@ const Hero = () => {
 						</div>
 					</FestivalDate>
 					<HeroButton>
-						<ButtonContact />
+						<ButtonContact/>
 						<ButtonMore />
 					</HeroButton>
 				</LeftSide>
 				<RightSide>
 					<ImgRight>
-						<img src={moon} alt='' className='moon-image' />
-						<img src={house} alt='' className='house-image' />
+						<img src={moon} alt='księżyc img' className='moon-image' />
+						<img src={house} alt='dom img' className='house-image' />
 						<motion.div
 							animate={{ y: [0, 10, 7, 15, 9, 12, 0] }}
 							transition={{ duration: 5, type: 'tween', repeat: Infinity }}
 							className='bat-image-motion'>
-							<img src={bat} alt='' className='bat-image' />
+							<img src={bat} alt='nietoperz img' className='bat-image' />
 						</motion.div>
 						<motion.div animate={{ y: [0, 40, 0] }} transition={{ duration: 6, type: 'tween', repeat: Infinity }} className='back-image-motion'>
-							<img src={witch} alt='' className='witch-image' />
+							<img src={witch} alt='czarownica na miotle img' className='witch-image' />
 						</motion.div>
 					</ImgRight>
 				</RightSide>

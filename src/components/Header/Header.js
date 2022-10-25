@@ -28,11 +28,13 @@ const Header = () => {
 				<Link to='/the-tickets' onClick={closeMenu}>
 					<li>Bilety</li>
 				</Link>
-				<Link to='/Quiz' onClick={closeMenu}>
+				<Link to='/quiz' onClick={closeMenu}>
 					<li>Quiz</li>
 				</Link>
 				<SocialIcon />
-				<ButtonContactWhite className='btn-white' />	
+				<Link to='/contact' onClick={closeMenu}>
+					<ButtonContactWhite  className='btn-white' />	
+				</Link>
 			</Nav>	
 		</Wrapper>
 	)
