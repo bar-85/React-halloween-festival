@@ -13,6 +13,15 @@ export const QuizStyled = styled.div`
 		height: 40rem;
 		z-index: -1;
 	}
+
+	@media screen and (max-width: 320px) {
+		.backImg {
+			top: 11rem;
+			right: 0%;
+			height: 31.7rem;
+			z-index: -1;
+		}
+	}
 `
 export const AppStyled = styled.div`
 	display: flex;
@@ -31,10 +40,20 @@ export const AppStyled = styled.div`
 
 	@media screen and (max-width: 900px) {
 		width: 360px;
+		margin-top: -8rem;
+		background-color: rgba(76, 19, 106, 0.925);
 	}
 
 	@media screen and (max-width: 320px) {
 		width: 310px;
+		margin-top: -5rem;
+
+		.backImg {
+			top: 11rem;
+			right: 0%;
+			height: 31rem;
+			z-index: -1;
+		}
 	}
 `
 export const Title = styled.div`
@@ -112,17 +131,13 @@ export const Answer = styled.div`
 		border: 1px solid #ffbb002c;
 		cursor: pointer;
 
-	
-	}
-	button:hover {
-		background-color: #a87317;
-	}	
-    
-    /* &.correct {
-			background-color: #2f922f;
+		:hover {
+			background-color: #a87317;
 		}
-
-		&.incorrect {
-			background-color: #ff3333;
-		} */
+		@media screen and (max-width: 450px) {
+			:hover {
+				background-color: #2c1803c4;
+			}
+		}
+	}
 `

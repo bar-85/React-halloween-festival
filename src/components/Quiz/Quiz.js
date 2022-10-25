@@ -78,7 +78,9 @@ const Quiz = () => {
 
 	const handleAnswerButtonClick = isCorrect => {
 		if (isCorrect === true) {
+			
 			setScore(score + 1)
+			
 		}
 
 		const nextQuestion = currentQuestion + 1
@@ -117,9 +119,7 @@ const Quiz = () => {
 
 							<Answer>
 								{questions[currentQuestion].answerOptions.map(answerOption => (
-									<button
-										className={`button ${answerOption.isCorrect ? 'correct' : 'incorrect'}`}
-										key = {answerOption.id} 
+									<button 
 										onClick={() => handleAnswerButtonClick(answerOption.isCorrect)}>
 										{answerOption.answerText}
 									</button>
