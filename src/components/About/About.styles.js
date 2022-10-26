@@ -4,8 +4,6 @@ export const AboutStyled = styled.div`
 	padding: 0 3rem 0 3rem;
 	display: flex;
 	height: 30rem;
-	margin-bottom: 8rem;
-	margin-top: 9rem;
 	margin-bottom: 13rem;
 	padding-top: 3rem;
 

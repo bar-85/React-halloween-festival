@@ -32,7 +32,7 @@ const Header = () => {
 					<li>Quiz</li>
 				</Link>
 				<SocialIcon />
-				<Link to='/contact' onClick={closeMenu}>
+				<Link to='/contact' >
 					<ButtonContactWhite  className='btn-white' />	
 				</Link>
 			</Nav>	

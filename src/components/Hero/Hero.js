@@ -14,6 +14,7 @@ import ButtonContact from '../Buttons/ButtonContact'
 import ButtonMore from '../Buttons/ButtonMore'
 import About from '../About/About'
 
+
 const Hero = () => {
 	return (
 		<div>
@@ -80,7 +81,9 @@ const Hero = () => {
 				<Wrapper>
 					<About />
 				</Wrapper>
-				
+				<Wrapper>
+					
+				</Wrapper>
 			</section>
 			<section>
 				<Footer />

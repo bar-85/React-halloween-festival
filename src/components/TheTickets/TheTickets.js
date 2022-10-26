@@ -1,7 +1,10 @@
 import React from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
-import { Wrapper, LeftSide, RightSide } from '../ItemStyles/ItemStyles.styles'
+import { Wrapper } from '../ItemStyles/ItemStyles.styles'
+
+
+
 
 
 const TheTickets = () => {
@@ -9,10 +12,7 @@ const TheTickets = () => {
 		<div>
 			<Header />
 			<Wrapper>
-				<LeftSide>Ticket</LeftSide>
-				<RightSide>
-					
-				</RightSide>
+
 			</Wrapper>
 			<section>
 				<Footer />
