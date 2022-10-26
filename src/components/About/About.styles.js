@@ -5,7 +5,7 @@ export const AboutStyled = styled.div`
 	display: flex;
 	height: 30rem;
 	margin-bottom: 13rem;
-	padding-top: 3rem;
+	padding-top: 10rem;
 
 	@media screen and (max-width: 900px) {
 		margin-top: 0;
