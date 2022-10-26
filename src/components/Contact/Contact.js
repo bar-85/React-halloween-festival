@@ -30,15 +30,15 @@ const Contact = () => {
 					<h1>Formularz kontaktowy</h1>
 					<div>
 						<label>Imię</label>
-						<input type='text' />
+						<input type='text' required="required" />
 					</div>
 					<div>
 						<label>Nazwisko</label>
-						<input type='text' />
+						<input type='text' required="required" />
 					</div>
 					<div>
 						<label>Wpisz wiadomość:</label>
-						<textarea></textarea>
+						<textarea ></textarea>
 					</div>
 
 					<div>
