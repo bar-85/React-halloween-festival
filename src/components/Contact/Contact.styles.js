@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const PageHeader = styled.div`
-	background-color: #d000ff2a;
+	position: relative;
+	background-color: #d000ff75;
 	box-shadow: 4px 16px 74px 15px #d000ff2a;
 	height: 40vh;
 	width: 100%;
@@ -25,6 +26,10 @@ export const PageHeader = styled.div`
 		color: orange;
 		font-size: 1.5rem;
 	}
+
+    .spider-image {
+        position: absolute;
+    }
 `
 export const Signup = styled.div`
 	display: flex;
@@ -88,14 +93,23 @@ export const Signup = styled.div`
 `
 
 export const FormStyled = styled.div`
-    display: flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
 
-    div {
-        background-color: rgba(76, 19, 106, 0.675);
-	width: 450px;
+	div {
+		right: 40%;
+		top: 85%;
+	}
+`
+
+export const Form = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(76, 19, 106, 0.675);
+	width: 50%;
 	height: min-content;
 	min-height: 200px;
 	height: 30rem;
@@ -105,16 +119,52 @@ export const FormStyled = styled.div`
 	box-shadow: 0px 19px 60px rgba(255, 136, 0, 0.26);
 	justify-content: space-evenly;
 
+	h1 {
+		color: orange;
+		font-size: 24px;
+		font-weight: 600;
+		margin-bottom: 1rem;
+	}
+
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	label {
+		margin-bottom: 0.5rem;
+		color: white;
+	}
+
+	input {
+		font: inherit;
+		padding: 0.5rem;
+		border-radius: 6px;
+		border: 2px solid orange;
+		width: 20rem;
+		max-width: 100%;
+		background-color: #ffffffae;
+	}
+
+	textarea {
+		font: inherit;
+		padding: 0.5rem;
+		border-radius: 6px;
+		border: 1px solid orange;
+		width: 20rem;
+		max-width: 100%;
+		background-color: #ffffffae;
+	}
+
 	@media screen and (max-width: 900px) {
-		div {width: 360px;
+		width: 360px;
 		margin-top: -8rem;
 		background-color: rgba(76, 19, 106, 0.925);
-        }
 	}
 
 	@media screen and (max-width: 320px) {
-		div {width: 310px;
+		width: 310px;
 		margin-top: -5rem;
-        }
-    }
+	}
 `
