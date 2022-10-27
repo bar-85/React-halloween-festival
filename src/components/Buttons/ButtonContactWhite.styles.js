@@ -18,6 +18,10 @@ export const Wrapper = styled.button`
 	}
 
 	@media screen and (max-width: 900px) {
-		display: none;
+		margin-bottom: 2rem;
+	}
+
+	@media screen and (max-width: 480px) {
+		margin-left: 3rem;
 	}
 `

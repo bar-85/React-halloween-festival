@@ -55,6 +55,12 @@ export const Nav = styled.div`
 			transition: 0.3s;
 		}
 
+		@media screen and (max-width: 320px) {
+			&.header-menu {
+				top: 10%;
+			}
+		}
+
 		&.header-menu.active {
 			right: -3px;
 		}
