@@ -17,7 +17,5 @@ export const Wrapper = styled.button`
 		background-color: rgb(254, 176, 31);
 	}
 
-	@media screen and (max-width: 320px) {
-		font-size: 0.7rem;
-	}
+
 `

@@ -4,8 +4,16 @@ export const AboutStyled = styled.div`
 	padding: 0 3rem 0 3rem;
 	display: flex;
 	height: 30rem;
-	margin-bottom: 13rem;
+	margin-bottom: 19rem;
 	padding-top: 10rem;
+
+	@media screen and (max-width: 1250px) {
+		margin-top: 10rem;
+		padding: 2rem;
+		gap: 5rem;
+		
+		
+	}
 
 	@media screen and (max-width: 900px) {
 		margin-top: 0;
@@ -42,6 +50,23 @@ export const Awesome = styled.div`
 		align-items: center;
 
 		span:nth-child(1) {
+			font-size: 2.3rem;
+		}
+
+		span:nth-child(2) {
+			font-size: 2.3rem;
+			margin: 1rem;
+		}
+		span:nth-child(3) {
+			color: gray;
+			font-size: 1.2rem;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		align-items: center;
+
+		span:nth-child(1) {
 			font-size: 1.5rem;
 		}
 
@@ -63,7 +88,12 @@ export const Cards = styled.div`
 		position: absolute;
 	}
 
+	@media screen and (max-width: 1250px) {
+		margin-left: -25rem;
+	}
+
 	@media screen and (max-width: 900px) {
+		margin-left: 0;
 		align-items: center;
 		display: flex;
 		flex-direction: column;

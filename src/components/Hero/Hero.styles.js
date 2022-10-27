@@ -1,109 +1,103 @@
 import styled from 'styled-components'
 
-export const ImgRight = styled.div`
-	.house-image {
-		position: absolute;
-		top: 7rem;
-		left: -200%;
-		height: 28rem;
-		z-index: -1;
+export const ImgStyled = styled.div`
+	img {
+		max-width: 100%;
+		height: auto;
 	}
 
-	.witch-image {
+	.house {
 		position: absolute;
-		top: 2rem;
-		left: -45%;
-		height: 10rem;
-		z-index: 2;
-	}
-
-	.moon-image {
-		position: absolute;
-		top: 0.5rem;
-		left: -25%;
-		height: 15rem;
-		z-index: -2;
-	}
-
-	.bat-image {
-		position: absolute;
-		left: -180%;
-		top: 1rem;
-		width: 10rem;
-		height: 10rem;
+		top: 25%;
+		left: 25%;
 		z-index: -3;
-	}
 
-	@media screen and (max-width: 900px) {
-		.house-image {
-			position: relative;
-			align-self: center;
-			width: 23rem;
-			height: 18rem;
-			top: 11rem;
-			left: -2%;
-			z-index: -3;
+		@media screen and (max-width: 1150px) {
+			top: 20rem;
 		}
 
-		.witch-image {
+		@media screen and (max-width: 900px) {
 			position: relative;
-			height: 7rem;
+			margin-bottom: 1rem;
+			top: 13rem;
+			left: 11%;
+			z-index: -3;
+
+			.house-image {
+				width: 70%;
+			}
+		}
+	}
+
+	.witch {
+		position: absolute;
+		right: 6%;
+		top: 16%;
+		z-index: -2;
+		width: 15rem;
+
+		@media screen and (max-width: 1150px) {
 			width: 10rem;
-			left: 46%;
-			top: -24rem;
+			top: 30%;
+		}
+
+		@media screen and (max-width: 900px) {
+			position: relative;
+			width: 11rem;
+			left: 61%;
+			top: -30rem;
 			z-index: 2;
 		}
 
-		.moon-image {
-			width: 10rem;
-			height:10rem;
-			left: 13rem;
-			top: 1rem;
-			z-index: -6;
+		@media screen and (max-width: 768px) {
+			top: -27rem;
+			width: 8rem;
 		}
+
+		@media screen and (max-width: 480px) {
+			top: -20rem;
+		}
+
+		@media screen and (max-width: 320px) {
+			left: 56%;
+			width: 7rem;
+		}
+	}
+
+	.bat {
+		position: absolute;
+		left: 30%;
+		top: 7rem;
+		z-index: -3;
 
 		.bat-image {
-			position: relative;
-			height: 7rem;
-			width: 7rem;
-			left: 6%;
-			top: -11rem;
-			z-index: 3;
-		}
-	}
-
-
-	@media screen and (max-width: 320px) {
-		.house-image {
-			width: 20rem;
-			height: 16rem;
-			top: 7rem;
-			left: -2%;
-		}
-
-		.witch-image {
-			left: 45%;
-			top: -25rem;
-			z-index: 2;
-		}
-
-		.moon-image {
-			position: relative;
-			align-self: center;
 			width: 10rem;
 			height: 10rem;
-			left: 10rem;
-			top: 3rem;
-			z-index: -1;
+		}
+		@media screen and (max-width: 1150px) {
+			left: 35%;
 		}
 
-		.bat-image {
+		@media screen and (max-width: 900px) {
 			position: relative;
-			height: 7rem;
-			width: 7rem;
-			left: 4%;
-			top: -14rem;
-			z-index: 2;
+			left: 17%;
+			top: -18rem;
+			z-index: 3;
+		}
+
+		@media screen and (max-width: 768px) {
+			top: -16rem;
+		}
+
+		@media screen and (max-width: 480px) {
+			top: -8rem;
+			width: 30%;
+			left: 7%;
+		}
+
+		@media screen and (max-width: 320px) {
+			left: 5%;
+			width: 40%;
 		}
 	}
 `
@@ -138,9 +132,17 @@ export const UpTitle = styled.div`
 
 	@media screen and (max-width: 900px) {
 		margin: 0 0 1rem 0;
-		font-size: small;
+		font-size: 1.5rem;
 		align-self: center;
 		transform: scale(0.8);
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 1.2rem;
+	}
+
+	@media screen and (max-width: 480px) {
+		font-size: 0.95rem;
 	}
 
 	@media screen and (max-width: 320px) {
@@ -166,9 +168,17 @@ export const MediumTitle = styled.div`
 	}
 
 	@media screen and (max-width: 900px) {
-		font-size: 3rem;
+		font-size: 4.5rem;
 		align-items: center;
 		justify-content: center;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 4rem;
+	}
+
+	@media screen and (max-width: 480px) {
+		font-size: 3rem;
 	}
 
 	@media screen and (max-width: 320px) {
@@ -200,13 +210,43 @@ export const FestivalDate = styled.div`
 		margin-top: 2rem;
 
 		div > span:nth-of-type(1) {
-			font-size: large;
+			font-size: 2rem;
 			align-self: center;
 		}
 
 		div > span:nth-of-type(2) {
-			font-size: small;
+			font-size: 1rem;
 			align-self: center;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		div > span:nth-of-type(1) {
+			font-size: 1.8rem;
+		}
+
+		div > span:nth-of-type(2) {
+			font-size: 0.9rem;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		div > span:nth-of-type(1) {
+			font-size: 1.5rem;
+		}
+
+		div > span:nth-of-type(2) {
+			font-size: 0.8rem;
+		}
+	}
+
+	@media screen and (max-width: 320px) {
+		div > span:nth-of-type(1) {
+			font-size: 1.3rem;
+		}
+
+		div > span:nth-of-type(2) {
+			font-size: 0.7rem;
 		}
 	}
 `

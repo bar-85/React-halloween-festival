@@ -1,14 +1,13 @@
 import React from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
-import witch from '../../assets/czarownica4.png'
+import witch from '../../assets/witchimg.png'
 import bat from '../../assets/bat2.png'
 import house from '../../assets/house2.png'
-import moon from '../../assets/moon.png'
 import NumberCounter from 'number-counter'
 import { motion } from 'framer-motion'
-import { UpTitle, MediumTitle, FestivalDate, ImgRight, HeroButton } from './Hero.styles'
-import { Wrapper, LeftSide, RightSide } from '../ItemStyles/ItemStyles.styles'
+import { UpTitle, MediumTitle, FestivalDate, HeroButton, ImgStyled } from './Hero.styles'
+import { Wrapper, LeftSide } from '../ItemStyles/ItemStyles.styles'
 import Blur from '../Blur/Blur'
 import ButtonContact from '../Buttons/ButtonContact'
 import ButtonMore from '../Buttons/ButtonMore'
@@ -64,21 +63,24 @@ const Hero = () => {
 						<ButtonMore />
 					</HeroButton>
 				</LeftSide>
-				<RightSide>
-					<ImgRight>
-						<img src={moon} alt='księżyc img' className='moon-image' />
+				<ImgStyled>
+					<div className='house'>
 						<img src={house} alt='dom img' className='house-image' />
+					</div>
+					<div className='bat'>
 						<motion.div
 							animate={{ y: [0, 10, 7, 15, 9, 12, 0] }}
 							transition={{ duration: 5, type: 'tween', repeat: Infinity }}
 							className='bat-image-motion'>
 							<img src={bat} alt='nietoperz img' className='bat-image' />
 						</motion.div>
-						<motion.div animate={{ y: [0, 40, 0] }} transition={{ duration: 6, type: 'tween', repeat: Infinity }} className='back-image-motion'>
+					</div>
+					<div className='witch'>
+						<motion.div animate={{ y: [0, 60, 0] }} transition={{ duration: 6, type: 'tween', repeat: Infinity }} className='back-image-motion'>
 							<img src={witch} alt='czarownica na miotle img' className='witch-image' />
 						</motion.div>
-					</ImgRight>
-				</RightSide>
+					</div>
+				</ImgStyled>
 			</Wrapper>
 			<section>
 				<Wrapper>
@@ -89,6 +91,7 @@ const Hero = () => {
 			<section>
 				<Footer />
 			</section>
+			
 		</div>
 	)
 }

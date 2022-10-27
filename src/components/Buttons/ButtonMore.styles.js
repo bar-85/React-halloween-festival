@@ -19,6 +19,6 @@ export const Wrapper = styled.button`
 	}
 
 	@media screen and (max-width: 320px) {
-		font-size: 0.7rem;
+		font-size: 0.55rem;
 	}
 `
