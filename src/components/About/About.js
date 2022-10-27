@@ -6,6 +6,7 @@ import imgOne from '../../assets/1.jpg'
 import imgTwo from '../../assets/2.jpg'
 import imgThree from '../../assets/3.jpg'
 import { AboutStyled, Awesome, Cards } from './About.styles'
+import { Link } from 'react-router-dom'
 
 const About = () => {
 	const transition = {
@@ -24,9 +25,9 @@ const About = () => {
 						<br />
 						Zarejestruj się na Halloween Festival 2023
 					</span>
-					<a href={'/'}>
+					<Link to='/contact'>
 						<ButtonContact />
-					</a>
+					</Link>
 					<Blur />
 				</Awesome>
 
