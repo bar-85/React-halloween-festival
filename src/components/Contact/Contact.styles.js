@@ -31,7 +31,24 @@ export const PageHeader = styled.div`
 
 	.spider-img {
 		position: absolute;
-		z-index: -10;
+		z-index: -7;
+	}
+
+	@media screen and (max-width: 900px) {
+		padding: 1px 8px;
+		margin-bottom: 7rem;
+
+		h2 {
+			font-size: 1.3rem;
+		}
+
+		p {
+			font-size: 1.1rem;
+		}
+
+		.spider-img {
+			top: -10.5rem;
+		}
 	}
 
 	@media screen and (max-width: 320px) {
@@ -42,6 +59,10 @@ export const PageHeader = styled.div`
 
 		p {
 			font-size: 1rem;
+		}
+
+		.spider-img {
+			top: -7rem;
 		}
 	}
 `
@@ -99,15 +120,11 @@ export const Signup = styled.div`
 				cursor: pointer;
 				background-color: rgb(255, 200, 99);
 			}
-
-			@media screen and (max-width: 320px) {
-				font-size: 0.7rem;
-				margin: 1rem 0 0 0rem;
-			}
 		}
 	}
-	@media screen and (max-width: 320px) {
-		margin: 1rem 0 3rem 2rem;
+
+	@media screen and (max-width: 900px) {
+		margin: 0rem 0 3rem 2rem;
 
 		form {
 			display: flex;
@@ -116,6 +133,10 @@ export const Signup = styled.div`
 			input {
 				width: 90%;
 				font-size: 0.8rem;
+			}
+
+			button {
+			font-size: 0.9rem;
 			}
 		}
 
@@ -126,7 +147,32 @@ export const Signup = styled.div`
 		p {
 			font-size: 1rem;
 		}
-	}
+
+	@media screen and (max-width: 320px) {
+		margin: 3rem 0 3rem 2rem;
+
+		form {
+			display: flex;
+			flex-direction: column;
+
+			input {
+				width: 90%;
+				font-size: 0.8rem;
+			}
+
+			button {
+			font-size: 0.9rem;
+			}
+		}
+
+		h3 {
+			margin-top: 4rem;
+			font-size: 1.3rem;
+		}
+
+		p {
+			font-size: 1rem;
+		}
 `
 
 export const FormStyled = styled.div`
@@ -213,12 +259,16 @@ export const FormStyled = styled.div`
 			width: 310px;
 			margin-top: 5rem;
 
-			input{
+			input {
 				width: 100%;
 			}
 
 			textarea {
-				width: 100%;
+				width: 100%
+			}
+
+			.btn {
+				font-size: 0.9rem;
 			}
 		}
 	}
