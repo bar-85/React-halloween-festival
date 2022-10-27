@@ -14,7 +14,7 @@ export const ImgRight = styled.div`
 		top: 2rem;
 		left: -45%;
 		height: 10rem;
-		z-index: 3;
+		z-index: 2;
 	}
 
 	.moon-image {
@@ -22,7 +22,7 @@ export const ImgRight = styled.div`
 		top: 0.5rem;
 		left: -25%;
 		height: 15rem;
-		z-index: 0;
+		z-index: -2;
 	}
 
 	.bat-image {

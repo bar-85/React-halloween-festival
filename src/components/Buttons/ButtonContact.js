@@ -3,7 +3,7 @@ import {Wrapper} from './ButtonContact.styles'
 
 const ButtonContact = () => {
   return (
-    <Wrapper />
+    <Wrapper>Kontakt</Wrapper>
   )
 }
 

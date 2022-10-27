@@ -13,7 +13,7 @@ import Blur from '../Blur/Blur'
 import ButtonContact from '../Buttons/ButtonContact'
 import ButtonMore from '../Buttons/ButtonMore'
 import About from '../About/About'
-
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
 	return (
@@ -57,7 +57,10 @@ const Hero = () => {
 						</div>
 					</FestivalDate>
 					<HeroButton>
-						<ButtonContact/>
+						<Link to='./contact'>
+							<ButtonContact />
+						</Link>
+
 						<ButtonMore />
 					</HeroButton>
 				</LeftSide>
@@ -81,9 +84,7 @@ const Hero = () => {
 				<Wrapper>
 					<About />
 				</Wrapper>
-				<Wrapper>
-					
-				</Wrapper>
+				<Wrapper></Wrapper>
 			</section>
 			<section>
 				<Footer />

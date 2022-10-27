@@ -1,14 +1,30 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
-import { PageHeader, Signup, FormStyled, Form } from './Contact.styles'
+import { PageHeader, Signup, FormStyled } from './Contact.styles'
 import Blur from '../Blur/Blur'
 import spider from '../../assets/spider.png'
 import { motion } from 'framer-motion'
 
 const Contact = () => {
-	const submitHandler = event => {
-		event.preventDefault()
+	const form = useRef()
+
+	const submitHandler = e => {
+		e.preventDefault()
+	}
+
+	const sendEmail = e => {
+		e.preventDefault()
+
+		emailjs.sendForm('service_rk6lh6f', 'template_8w8gdsj', form.current, 'KFBtLQyWJQrdrvHfT').then(
+			result => {
+				console.log(result.text)
+			},
+			error => {
+				console.log(error.text)
+			}
+		)
 	}
 
 	return (
@@ -17,8 +33,8 @@ const Contact = () => {
 			<PageHeader>
 				<h2>Chcesz dowiedzieć się wiecej? </h2>
 				<p>Skontaktuj się z nami a my odpowiemy na wszystkie pytania.</p>
-				<motion.div animate={{ y: [0, 70, 0] }} transition={{ duration: 6, type: 'tween', repeat: Infinity }} className='back-image-motion'>
-					<img src={spider} alt='pająk img' className='spider-image' />
+				<motion.div animate={{ y: [80, 200, 80] }} transition={{ duration: 6, type: 'tween', repeat: Infinity }} className='spider-img'>
+					<img src={spider} alt='pająk img' />
 				</motion.div>
 			</PageHeader>
 
@@ -26,34 +42,33 @@ const Contact = () => {
 				<div>
 					<Blur />
 				</div>
-				<Form onSubmit={submitHandler}>
+				<form ref={form} onSubmit={sendEmail}>
 					<h1>Formularz kontaktowy</h1>
 					<div>
 						<label>Imię</label>
-						<input type='text' required="required" />
+						<input type='text' name='to_name' />
 					</div>
 					<div>
-						<label>Nazwisko</label>
-						<input type='text' required="required" />
+						<label>E-mail:</label>
+						<input type='email' name='from_name' />
 					</div>
 					<div>
-						<label>Wpisz wiadomość:</label>
-						<textarea ></textarea>
+						<label>Wiadomość:</label>
+						<textarea name='message'></textarea>
 					</div>
-
 					<div>
-						<button type='submit'>Wyślij</button>
+						<input className='btn' type='submit' value='Wyślij wiadomość' />
 					</div>
-				</Form>
+				</form>
 			</FormStyled>
 
 			<Signup>
 				<div>
-					<h3>Zapisz się do naszego Newslettera</h3>
-					<p>Otrzymuj powiadomienia e-mail o naszych nowościach.</p>
+					<h3>Newsletter</h3>
+					<p>bąć na bieżąco z wydarzeniami festiwalowymi</p>
 				</div>
-				<form>
-					<input type='text' placeholder='Wpisz swój email' id='email' />
+				<form  onSubmit={submitHandler}>
+					<input type='email' placeholder='Wpisz swój email' id='email'/>
 					<button>Wyślij</button>
 				</form>
 			</Signup>
