@@ -11,15 +11,10 @@ export const TicketCards = styled.div`
 		flex-direction: column;
 	}
 
-	@media screen and (max-width: 768px) {
-	}
-
 	@media screen and (max-width: 480px) {
         margin: 4rem 0 4rem 0;
 	}
 
-	@media screen and (max-width: 320px) {
-	}
 `
 
 export const Card = styled.div`
@@ -69,12 +64,6 @@ export const Card = styled.div`
 		:nth-child(2) {
 			scale: none;
 		}
-	}
-
-	@media screen and (max-width: 768px) {
-	}
-
-	@media screen and (max-width: 480px) {
 	}
 
 	@media screen and (max-width: 320px) {

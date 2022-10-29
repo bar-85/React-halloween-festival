@@ -16,12 +16,6 @@ export const TicketHeader = styled.div`
 		}
 	}
 
-	@media screen and (max-width: 900px) {
-	}
-
-	@media screen and (max-width: 768px) {
-	}
-
 	@media screen and (max-width: 480px) {
 		margin: 4rem;
 
