@@ -57,7 +57,8 @@ export const Nav = styled.div`
 
 		@media screen and (max-width: 320px) {
 			&.header-menu {
-				top: 10%;
+				top: 13.5%;
+				gap: 1rem;
 			}
 		}
 
