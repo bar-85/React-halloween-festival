@@ -40,9 +40,9 @@ export const Awesome = styled.div`
 		font-weight: bold;
 	}
 	span:nth-child(3) {
-		color: gray;
-		font-size: 14px;
-		margin-top: 1rem;
+		color: #000000;
+		font-size: 1rem;
+		margin-top: 1.2rem;
 		margin-bottom: 2rem;
 	}
 

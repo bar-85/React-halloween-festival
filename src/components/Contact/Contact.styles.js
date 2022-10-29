@@ -19,8 +19,8 @@ export const PageHeader = styled.div`
 	margin-bottom: 3rem;
 
 	h2 {
-		font-size: 2rem;
-		color: black;
+		font-size: 2.5rem;
+		color: orange;
 		margin-bottom: 1rem;
 	}
 
@@ -203,7 +203,7 @@ export const FormStyled = styled.div`
 
 		h1 {
 			color: orange;
-			font-size: 24px;
+			font-size: 1.7rem;
 			font-weight: 600;
 			margin-bottom: 1rem;
 		}
@@ -215,6 +215,7 @@ export const FormStyled = styled.div`
 		}
 
 		label {
+			font-size: 1rem;
 			margin-bottom: 0.5rem;
 			color: white;
 		}
@@ -268,6 +269,7 @@ export const FormStyled = styled.div`
 			}
 
 			.btn {
+				padding: 1.5rem;
 				font-size: 0.9rem;
 			}
 		}
