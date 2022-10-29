@@ -1,19 +1,19 @@
 import React from 'react'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
-import { Wrapper } from '../ItemStyles/ItemStyles.styles'
-
-
-
-
+import TicketCard from '../Card/TicketCard'
+import { TicketHeader } from './TheTickets.styles'
 
 const TheTickets = () => {
 	return (
 		<div>
 			<Header />
-			<Wrapper>
-
-			</Wrapper>
+			<TicketHeader>
+				<h1>
+					<span>Zarezerwuj</span> online
+				</h1>
+				<TicketCard />
+			</TicketHeader>
 			<section>
 				<Footer />
 			</section>

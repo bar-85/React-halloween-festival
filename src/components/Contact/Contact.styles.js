@@ -5,7 +5,7 @@ export const PageHeader = styled.div`
 	position: relative;
 	background-color: #d000ff75;
 	box-shadow: 4px 16px 74px 15px #d000ff2a;
-	background-image: url(${backimg1});
+	/* background-image: url(${backimg1}); */
 	height: 40vh;
 	width: 100%;
 	background-size: cover;
