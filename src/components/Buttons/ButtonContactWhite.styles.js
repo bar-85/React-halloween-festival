@@ -18,10 +18,7 @@ export const Wrapper = styled.button`
 	}
 
 	@media screen and (max-width: 900px) {
-		margin-bottom: 2rem;
-	}
-
-	@media screen and (max-width: 480px) {
-		margin-left: 2rem;
+		margin-bottom: 3rem;
+		margin-left: 3rem;
 	}
 `
