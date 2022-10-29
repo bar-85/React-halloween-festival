@@ -6,6 +6,20 @@ export const TicketCards = styled.div`
 	justify-content: center;
 	gap: 3rem;
 	margin: 7rem 0 10rem 0;
+
+	@media screen and (max-width: 900px) {
+		flex-direction: column;
+	}
+
+	@media screen and (max-width: 768px) {
+	}
+
+	@media screen and (max-width: 480px) {
+        margin: 4rem 0 4rem 0;
+	}
+
+	@media screen and (max-width: 320px) {
+	}
 `
 
 export const Card = styled.div`
@@ -22,8 +36,8 @@ export const Card = styled.div`
 		scale: 1.1;
 	}
 
-    :hover {
-		background:  rgba(76, 19, 106, 0.24);
+	:hover {
+		background: rgba(76, 19, 106, 0.24);
 	}
 
 	:hover:nth-child(2) {
@@ -49,6 +63,24 @@ export const Card = styled.div`
 	.button {
 		margin: 2rem;
 		align-self: center;
+	}
+
+	@media screen and (max-width: 900px) {
+		:nth-child(2) {
+			scale: none;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+	}
+
+	@media screen and (max-width: 480px) {
+	}
+
+	@media screen and (max-width: 320px) {
+        > :nth-child(1) {
+        font-size: 1.35rem;
+        }
 	}
 `
 

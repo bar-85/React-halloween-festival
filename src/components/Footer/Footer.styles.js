@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
 	border-top: 1px solid rgb(94, 0, 156);
 	color: #eee;
 	padding: 3rem 1rem;
+	margin-top: 5rem;
 
 	ul {
 		display: flex;

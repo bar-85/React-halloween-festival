@@ -39,7 +39,7 @@ export const PageHeader = styled.div`
 		margin-bottom: 7rem;
 
 		h2 {
-			font-size: 1.3rem;
+			font-size: 1.5rem;
 		}
 
 		p {
@@ -191,7 +191,7 @@ export const FormStyled = styled.div`
 		flex-direction: column;
 		align-items: center;
 		background-color: rgba(76, 19, 106, 0.675);
-		width: 50%;
+		width: 40%;
 		height: min-content;
 		min-height: 200px;
 		height: 30rem;
