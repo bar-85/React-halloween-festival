@@ -5,7 +5,7 @@ export const AboutStyled = styled.div`
 	display: flex;
 	height: 30rem;
 	margin-bottom: 19rem;
-	padding-top: 10rem;
+	margin-top: 20rem;
 
 	@media screen and (max-width: 1250px) {
 		margin-top: 10rem;
@@ -87,6 +87,11 @@ export const Cards = styled.div`
 	* {
 		position: absolute;
 	}
+
+	@media screen and (min-width: 1250px) {
+		margin-left: 5rem;
+	}
+
 
 	@media screen and (max-width: 1250px) {
 		margin-left: -25rem;

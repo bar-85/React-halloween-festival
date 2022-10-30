@@ -28,10 +28,10 @@ const Quiz = () => {
 		{
 			questionText: 'Halloween najpopularniejsze jest w...?',
 			answerOptions: [
-				{ answerText: 'w Polsce', isCorrect: false },
-				{ answerText: 'we Francji', isCorrect: false },
-				{ answerText: 'w USA', isCorrect: true },
-				{ answerText: 'w Turcji', isCorrect: false },
+				{ answerText: 'Polsce', isCorrect: false },
+				{ answerText: 'Holnadii', isCorrect: false },
+				{ answerText: 'USA', isCorrect: true },
+				{ answerText: 'Turcji', isCorrect: false },
 			],
 		},
 		{

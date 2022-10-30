@@ -14,7 +14,7 @@ export const ticketsData = [
 	{
 		name: 'VIP',
 		price: '250',
-		features: ['bilet premium', '+ darmowy bar dla VIPów', '+ Obszar VIP'
-        , '+ Toalety VIP'],
+		features: ['bilet premium', '+ darmowy bar dla VIPów', '+ obszar VIP'
+        , '+ toalety VIP'],
 	},
 ]
