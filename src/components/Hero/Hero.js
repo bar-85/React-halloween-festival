@@ -13,6 +13,7 @@ import ButtonContact from '../Buttons/ButtonContact'
 import ButtonMore from '../Buttons/ButtonMore'
 import About from '../About/About'
 import { Link } from 'react-router-dom'
+import Carousel from '../Carousel/Carousel'
 
 const Hero = () => {
 	return (
@@ -86,12 +87,13 @@ const Hero = () => {
 				<Wrapper>
 					<About />
 				</Wrapper>
-				<Wrapper></Wrapper>
+			</section>
+			<section>
+				<Carousel />
 			</section>
 			<section>
 				<Footer />
 			</section>
-			
 		</div>
 	)
 }
