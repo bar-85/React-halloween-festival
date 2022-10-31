@@ -12,6 +12,7 @@ const Contact = () => {
 
 	const submitHandler = e => {
 		e.preventDefault()
+		e.target.reset()
 	}
 
 	const sendEmail = e => {
