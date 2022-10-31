@@ -2,7 +2,7 @@ import React from 'react'
 import { TicketCards, Card, Features } from './TicketCard.styles'
 import { ticketsData } from '../../data/ticketsData'
 import orangeImg from '../../assets/orange.png'
-import ButtonContact from '../Buttons/ButtonContact'
+import { Button } from '../Buttons/Button.styles'
 
 const TicketCard = () => {
 	return (
@@ -22,7 +22,7 @@ const TicketCard = () => {
 							))}
 						</Features>
                         <div className='button'>
-                            <ButtonContact className='btn'/>
+                            <Button className='btn'>Czytaj więcej</Button>
                         </div>
                         
 					</Card>
