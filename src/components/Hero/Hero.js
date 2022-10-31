@@ -10,7 +10,7 @@ import { UpTitle, MediumTitle, FestivalDate, HeroButton, ImgStyled } from './Her
 import { Wrapper, LeftSide } from '../ItemStyles/ItemStyles.styles'
 import Blur from '../Blur/Blur'
 import ButtonContact from '../Buttons/ButtonContact'
-import ButtonMore from '../Buttons/ButtonMore'
+import ButtonTickets from '../Buttons/ButtonTickets'
 import About from '../About/About'
 import { Link } from 'react-router-dom'
 import Carousel from '../Carousel/Carousel'
@@ -61,7 +61,7 @@ const Hero = () => {
 							<ButtonContact />
 						</Link>
 
-						<ButtonMore />
+						<ButtonTickets />
 					</HeroButton>
 				</LeftSide>
 				<ImgStyled>

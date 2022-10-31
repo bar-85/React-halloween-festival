@@ -11,6 +11,7 @@ export const Button = styled.button`
 	color: black;
 	background-color: orange;
 	width: 8rem;
+	border-radius: 5px;
 
 	:hover {
 		cursor: pointer;
@@ -37,7 +38,7 @@ export const ButtonContactWhiteStyled = styled(Button)`
 	}
 `
 
-export const ButtonMoreStyled = styled(Button)`
+export const ButtonTicketsStyled = styled(Button)`
 	transition: 300ms all;
 	color: white;
 	background-color: transparent;
