@@ -1,10 +1,8 @@
 import React from 'react'
-import { Wrapper } from './ButtonContactWhite.styles'
+import { ButtonContactWhiteStyled } from './Button.styles'
 
 const ButtonContactWhite = () => {
-  return (
-    <Wrapper>Kontakt</Wrapper>
-  )
+	return <ButtonContactWhiteStyled>Kontakt</ButtonContactWhiteStyled>
 }
 
 export default ButtonContactWhite

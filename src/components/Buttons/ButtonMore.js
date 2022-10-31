@@ -1,10 +1,8 @@
 import React from 'react'
-import { Wrapper } from './ButtonMore.styles'
+import { ButtonMoreStyled } from './Button.styles'
 
 const ButtonMore = () => {
-  return (
-    <Wrapper>Bilety</Wrapper>
-  )
+	return <ButtonMoreStyled>Bilety</ButtonMoreStyled>
 }
 
 export default ButtonMore
