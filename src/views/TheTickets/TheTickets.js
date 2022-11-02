@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../Header/Header'
-import Footer from '../Footer/Footer'
-import TicketCard from '../Card/TicketCard'
+import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
+import TicketCard from '../../components/Card/TicketCard'
 import { TicketHeader } from './TheTickets.styles'
 
 const TheTickets = () => {

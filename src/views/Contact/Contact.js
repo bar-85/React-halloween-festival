@@ -1,9 +1,9 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import Header from '../Header/Header'
-import Footer from '../Footer/Footer'
+import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
 import { PageHeader, Signup, FormStyled } from './Contact.styles'
-import Blur from '../Blur/Blur'
+import Blur from '../../components/Blur/Blur'
 import spider from '../../assets/spider.png'
 import { motion } from 'framer-motion'
 
