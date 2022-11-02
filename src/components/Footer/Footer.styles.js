@@ -17,11 +17,11 @@ export const Wrapper = styled.div`
 		padding: 1rem;
 	}
 
-	li a {
+	li {
 		color: #fff;
 	}
 
-	li a:hover {
+	li:hover {
 		padding-bottom: 8px;
 		border-bottom: 3px solid orange;
 		color: orange;

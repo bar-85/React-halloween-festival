@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
-
 import { Hamburger, Wrapper, Nav } from './Header.styles'
 import LogoHeader from '../Logo/LogoHeader'
 import SocialIcon from '../SocialIcon/SocialIcon'
