@@ -47,7 +47,7 @@ export const PageHeader = styled.div`
 		}
 
 		.spider-img {
-			top: -10.5rem;
+			top: -7rem;
 		}
 	}
 
@@ -62,7 +62,7 @@ export const PageHeader = styled.div`
 		}
 
 		.spider-img {
-			top: -7rem;
+			top: -3rem;
 		}
 	}
 `
