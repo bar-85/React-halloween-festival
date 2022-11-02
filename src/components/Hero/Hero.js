@@ -1,24 +1,21 @@
 import React from 'react'
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
 import witch from '../../assets/witchimg.png'
 import bat from '../../assets/bat2.png'
 import house from '../../assets/house2.png'
 import NumberCounter from 'number-counter'
 import { motion } from 'framer-motion'
 import { UpTitle, MediumTitle, FestivalDate, HeroButton, ImgStyled } from './Hero.styles'
-import { Wrapper, LeftSide } from '../../components/ItemStyles/ItemStyles.styles'
-import Blur from '../../components/Blur/Blur'
-import ButtonContact from '../../components/Buttons/ButtonContact'
-import ButtonTickets from '../../components/Buttons/ButtonTickets'
-import About from '../../components/About/About'
+import { Wrapper, LeftSide } from '../ItemStyles/ItemStyles.styles'
+import Blur from '../Blur/Blur'
+import ButtonContact from '../Buttons/ButtonContact'
+import ButtonTickets from '../Buttons/ButtonTickets'
+
 import { Link } from 'react-router-dom'
-import Carousel from '../../components/Carousel/Carousel'
+
 
 const Hero = () => {
 	return (
 		<div>
-			<Header />
 			<Wrapper>
 				<Blur />
 				<LeftSide>
@@ -60,8 +57,9 @@ const Hero = () => {
 						<Link to='./contact'>
 							<ButtonContact />
 						</Link>
-
-						<ButtonTickets />
+						<Link to='./tickets'>
+							<ButtonTickets />
+						</Link>
 					</HeroButton>
 				</LeftSide>
 				<ImgStyled>
@@ -83,17 +81,6 @@ const Hero = () => {
 					</div>
 				</ImgStyled>
 			</Wrapper>
-			<section>
-				<Wrapper>
-					<About />
-				</Wrapper>
-			</section>
-			<section>
-				<Carousel />
-			</section>
-			<section>
-				<Footer />
-			</section>
 		</div>
 	)
 }
