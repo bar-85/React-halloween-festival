@@ -108,3 +108,5 @@ export const CardStyled = styled.div`
 	padding: 2rem;
 	color: white;
 `
+
+

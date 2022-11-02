@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
-import { TicketCards, Card, Features } from './TicketCard.styles'
+import { TicketCards, Card, Features, Wrapper, CardStyled } from './TicketCard.styles'
 import { ticketsData } from '../../data/ticketsData'
 import orangeImg from '../../assets/orange.png'
 import { Button } from '../Buttons/Button.styles'
-import InfoCard from './InfoCard'
+
+import ButtonContact from '../Buttons/ButtonContact'
+import { Link } from 'react-router-dom'
 
 const TicketCard = () => {
-	const [showCard, setShowCard] = useState(true)
+	const [showCard, setShowCard] = useState(false)
 
 	const toogleCardHandler = () => {
 		setShowCard(!showCard)
@@ -14,7 +16,21 @@ const TicketCard = () => {
 
 	return (
 		<div>
-			{showCard && <InfoCard />}
+			{showCard && (
+				<Wrapper>
+					<CardStyled>
+						<div>
+							<div>
+								W celu zarezerwowania biletów zapraszamy do kontaktu
+								<div></div>
+							</div>
+						</div>
+						<Link to='../contact'>
+							<ButtonContact />
+						</Link>
+					</CardStyled>
+				</Wrapper>
+			)}
 
 			<TicketCards>
 				{ticketsData.map((ticket, i) => (
