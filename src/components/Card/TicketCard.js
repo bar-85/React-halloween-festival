@@ -22,7 +22,6 @@ const TicketCard = () => {
 					<Card key={i}>
 						<span>{ticket.name}</span>
 						<span>{ticket.price} zł</span>
-
 						<Features>
 							{ticket.features.map((feature, i) => (
 								<div className='feature'>
