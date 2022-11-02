@@ -9,7 +9,9 @@ import { Wrapper, LeftSide } from '../ItemStyles/ItemStyles.styles'
 import Blur from '../Blur/Blur'
 import ButtonContact from '../Buttons/ButtonContact'
 import ButtonTickets from '../Buttons/ButtonTickets'
+
 import { Link } from 'react-router-dom'
+
 
 const Hero = () => {
 	return (
@@ -21,6 +23,7 @@ const Hero = () => {
 						<motion.div animate={{ x: [8, 238, 8] }} transition={{ duration: 8, type: 'tween', repeat: Infinity }}></motion.div>
 						<span>najlepsza impreza w mieście!</span>
 					</UpTitle>
+
 					<MediumTitle>
 						<div>
 							<span className='stroke-text'>Halloween</span>
@@ -29,6 +32,7 @@ const Hero = () => {
 							<span>Festiwal</span>
 						</div>
 					</MediumTitle>
+
 					<FestivalDate>
 						<div>
 							<span>
@@ -53,7 +57,7 @@ const Hero = () => {
 						<Link to='./contact'>
 							<ButtonContact />
 						</Link>
-						<Link to='./the-tickets'>
+						<Link to='./tickets'>
 							<ButtonTickets />
 						</Link>
 					</HeroButton>

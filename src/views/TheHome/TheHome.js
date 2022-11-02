@@ -4,16 +4,18 @@ import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import About from '../../components/About/About'
 import Carousel from '../../components/Carousel/Carousel'
+import { Wrapper } from '../../components/ItemStyles/ItemStyles.styles'
+
 
 const TheHome = () => {
 	return (
 		<div>
+			<Header />
+			<Hero />
 			<section>
-				<Header />
-				<Hero />
-			</section>
-			<section>
-				<About />
+				<Wrapper>
+					<About />
+				</Wrapper>
 			</section>
 			<section>
 				<Carousel />

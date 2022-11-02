@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-import { TicketCards, Card, Features, Wrapper, CardStyled } from './TicketCard.styles'
+import { TicketCards, Card, Features } from './TicketCard.styles'
 import { ticketsData } from '../../data/ticketsData'
 import orangeImg from '../../assets/orange.png'
 import { Button } from '../Buttons/Button.styles'
-
-import ButtonContact from '../Buttons/ButtonContact'
-import { Link } from 'react-router-dom'
+import ShowCardStyled from './ShowCardStyled'
 
 const TicketCard = () => {
 	const [showCard, setShowCard] = useState(false)
@@ -17,21 +15,8 @@ const TicketCard = () => {
 	return (
 		<div>
 			{showCard && (
-				<Wrapper>
-					<CardStyled>
-						<div>
-							<div>
-								W celu zarezerwowania biletów zapraszamy do kontaktu
-								<div></div>
-							</div>
-						</div>
-						<Link to='../contact'>
-							<ButtonContact />
-						</Link>
-					</CardStyled>
-				</Wrapper>
+				<ShowCardStyled />
 			)}
-
 			<TicketCards>
 				{ticketsData.map((ticket, i) => (
 					<Card key={i}>
@@ -41,16 +26,15 @@ const TicketCard = () => {
 						<Features>
 							{ticket.features.map((feature, i) => (
 								<div className='feature'>
-									<img src={orangeImg} alt='' />
-									<span key={i}>{feature}</span>
-								</div>
+                                    <img src={orangeImg} alt="" />
+                                    <span key={i}>{feature}</span>
+                                </div>
 							))}
 						</Features>
-						<div className='button'>
-							<Button onClick={toogleCardHandler} className='btn'>
-								Czytaj więcej
-							</Button>
-						</div>
+                        <div className='button'>
+                            <Button onClick={toogleCardHandler} className='btn'>Czytaj więcej</Button>
+                        </div>
+                        
 					</Card>
 				))}
 			</TicketCards>
