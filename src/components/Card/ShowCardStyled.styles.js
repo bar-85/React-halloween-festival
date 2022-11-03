@@ -13,11 +13,14 @@ export const ContactCard = styled.div`
 `
 export const Wrapper = styled.div`
 	position: fixed;
-	top: 20vh;
-	left: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 40vh;
+	left: 10%; 
 	width: 80%;
 	z-index: 100;
-	border: none;
+
 `
 
 export const CardStyled = styled.div`
