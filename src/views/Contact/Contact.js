@@ -48,15 +48,15 @@ const Contact = () => {
 					<h1>Formularz kontaktowy</h1>
 					<div>
 						<label>Imię</label>
-						<input type='text' name='to_name' />
+						<input type='text' name='to_name' required />
 					</div>
 					<div>
 						<label>E-mail:</label>
-						<input type='email' name='from_name' />
+						<input type='email' name='from_name' required />
 					</div>
 					<div>
 						<label>Wiadomość:</label>
-						<textarea name='message'></textarea>
+						<textarea name='message' required></textarea>
 					</div>
 					<div>
 						<input className='btn' type='submit' value='Wyślij wiadomość' />
@@ -70,7 +70,7 @@ const Contact = () => {
 					<p>bąć na bieżąco z wydarzeniami festiwalowymi</p>
 				</div>
 				<form  onSubmit={submitHandler}>
-					<input type='email' placeholder='Wpisz swój email' id='email'/>
+					<input type='email' placeholder='Wpisz swój email' id='email' required/>
 					<button>Wyślij</button>
 				</form>
 			</Signup>
