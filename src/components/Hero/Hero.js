@@ -57,7 +57,7 @@ const Hero = () => {
 						<Link to='./contact'>
 							<ButtonContact />
 						</Link>
-						<Link to='./tickets'>
+						<Link to='./the-tickets'>
 							<ButtonTickets />
 						</Link>
 					</HeroButton>

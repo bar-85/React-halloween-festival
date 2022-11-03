@@ -1,16 +1,22 @@
 import React from 'react'
 import ButtonContact from '../Buttons/ButtonContact'
-import { Wrapper, CardStyled, ButtonStyled } from './ShowCardStyled.styles'
+import ButtonTickets from '../Buttons/ButtonTickets'
+import { Wrapper, CardStyled, ButtonStyled, ContactCard } from './ShowCardStyled.styles'
 import { Link } from 'react-router-dom'
 
 const ShowCardStyled = () => {
+
+	const refreshPage = () =>  {
+		window.location.reload(false);
+	  }
+
 	return (
-		<div>
+		<ContactCard>
 			<Wrapper>
 				<CardStyled>
 					<div>
 						<div>
-							W celu zarezerwowania biletów zapraszamy do kontaktu
+							W celu zarezerwowania biletów prosimy o kontakt z naszym biurem obsługi festiwalu
 							<div></div>
 						</div>
 					</div>
@@ -18,10 +24,13 @@ const ShowCardStyled = () => {
 						<Link to='../contact'>
 							<ButtonContact />
 						</Link>
+						<Link to='../the-tickets' onClick={refreshPage} >
+							<ButtonTickets />
+						</Link>
 					</ButtonStyled>
 				</CardStyled>
 			</Wrapper>
-		</div>
+		</ContactCard>
 	)
 }
 
