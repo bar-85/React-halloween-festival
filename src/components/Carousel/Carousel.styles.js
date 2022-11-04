@@ -14,12 +14,13 @@ export const CarouselStyled = styled.div`
 		flex-direction: column;
 		position: relative;
 		background: #c800ff3d;
+		box-shadow: 2px 0px 20px rgba(255, 136, 0, 0.152);
 		border-radius: 0.5rem;
 		align-items: center;
 		justify-content: center;
 		padding: 2rem;
 		gap: 0.5rem;
-		box-shadow: 0rem 1rem 3rem -50px #7d7d7d;
+		
 
 		img {
 			top: 1rem;

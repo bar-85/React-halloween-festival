@@ -2,18 +2,14 @@ import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
-import { PageHeader, Signup, FormStyled } from './Contact.styles'
+import { PageHeader, FormStyled } from './Contact.styles'
 import Blur from '../../components/Blur/Blur'
 import spider from '../../assets/spider.png'
 import { motion } from 'framer-motion'
+import Newsletter from '../../components/Newsletter/Newsletter'
 
 const Contact = () => {
 	const form = useRef()
-
-	const submitHandler = e => {
-		e.preventDefault()
-		e.target.reset()
-	}
 
 	const sendEmail = e => {
 		e.preventDefault()
@@ -30,7 +26,7 @@ const Contact = () => {
 	}
 
 	return (
-		<div>
+		<>
 			<Header />
 			<PageHeader>
 				<h2>Chcesz dowiedzieć się wiecej? </h2>
@@ -63,19 +59,9 @@ const Contact = () => {
 					</div>
 				</form>
 			</FormStyled>
-
-			<Signup>
-				<div>
-					<h3>Newsletter</h3>
-					<p>bąć na bieżąco z wydarzeniami festiwalowymi</p>
-				</div>
-				<form  onSubmit={submitHandler}>
-					<input type='email' placeholder='Wpisz swój email' id='email' required/>
-					<button>Wyślij</button>
-				</form>
-			</Signup>
+			<Newsletter />
 			<Footer />
-		</div>
+		</>
 	)
 }
 
