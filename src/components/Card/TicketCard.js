@@ -24,7 +24,7 @@ const TicketCard = () => {
 						<span>{ticket.price} zł</span>
 						<Features>
 							{ticket.features.map((feature, i) => (
-								<div className='feature'>
+								<div className='feature' key={i}>
                                     <img src={orangeImg} alt="" />
                                     <span key={i}>{feature}</span>
                                 </div>

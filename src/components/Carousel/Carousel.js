@@ -31,11 +31,11 @@ const Carousel = () => {
 					spaceBetween={20}
 					className='tCarousel'>
 					{CarouselData.map((caro, i) => (
-						<SwiperSlide>
-							<div className='caro'>
+						<SwiperSlide >
+							<div className='caro' key={i}>
 								
-								<img src={caro.img} alt='' />
-								<span>{caro.name}</span>
+								<img src={caro.img} alt=''  />
+								<span >{caro.name}</span>
 								<hr />
 								<span>{caro.comment}</span>
 								
