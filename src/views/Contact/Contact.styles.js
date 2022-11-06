@@ -1,11 +1,10 @@
 import styled from 'styled-components'
-import backimg1 from '../../assets/backimg1.jpg'
+
 
 export const PageHeader = styled.div`
 	position: relative;
 	background-color:  rgb(76, 19, 106);
 	box-shadow: 4px 16px 74px 15px #d000ff2a;
-	/* background-image: url(${backimg1}); */
 	height: 40vh;
 	width: 100%;
 	background-size: cover;
@@ -95,7 +94,6 @@ export const FormStyled = styled.div`
 		h1 {
 			color: orange;
 			font-size: 1.7rem;
-			font-weight: 600;
 			margin-bottom: 1rem;
 		}
 
@@ -143,13 +141,16 @@ export const FormStyled = styled.div`
 
 		@media screen and (max-width: 900px) {
 			width: 360px;
-			margin-top: -8rem;
 			background-color: rgba(76, 19, 106, 0.925);
 		}
 
 		@media screen and (max-width: 320px) {
 			width: 310px;
 			margin-top: 5rem;
+
+			h1 {
+				font-size: 1.5rem;
+			}
 
 			input {
 				width: 100%;
@@ -160,7 +161,6 @@ export const FormStyled = styled.div`
 			}
 
 			.btn {
-				padding: 1.5rem;
 				font-size: 0.9rem;
 			}
 		}

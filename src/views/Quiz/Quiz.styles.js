@@ -86,10 +86,10 @@ export const Title = styled.div`
 
 	@media screen and (max-width: 320px) {
 		span:nth-child(1) {
-			font-size: 1.8rem;
+			font-size: 1.5rem;
 		}
 		span:nth-child(2) {
-			font-size: 1.8rem;
+			font-size: 1.5rem;
 		}
 	}
 `

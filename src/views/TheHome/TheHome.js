@@ -13,9 +13,9 @@ const TheHome = () => {
 		<>
 			<Header />
 			<Hero />
-			<About />
-			<Carousel />
+			<About />	
 			<Offer />
+			<Carousel />
 			<Newsletter />
 			<Footer />
 		</>

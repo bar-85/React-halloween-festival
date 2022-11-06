@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const CarouselStyled = styled.div`
 	width: 100%;
-	margin: 5rem 0 9rem 0;
+	margin: 2rem 0 2rem 0;
 
 	.tCarousel {
 		padding: 2rem;
@@ -20,7 +20,6 @@ export const CarouselStyled = styled.div`
 		justify-content: center;
 		padding: 2rem;
 		gap: 0.5rem;
-		
 
 		img {
 			top: 1rem;
@@ -49,13 +48,10 @@ export const CarouselStyled = styled.div`
 		}
 
 		@media screen and (max-width: 480px) {
-			margin: 1rem 0 1rem 0;
 
 			> span:nth-of-type(2) {
 				font-size: 0.8rem;
-		}
-
-
+			}
 		}
 
 		@media screen and (max-width: 320px) {
@@ -65,7 +61,7 @@ export const CarouselStyled = styled.div`
 
 			> span:nth-of-type(2) {
 				font-size: 0.75rem;
-		}
+			}
 		}
 	}
 `
@@ -74,23 +70,27 @@ export const CarouselHeader = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 4rem;
+	margin-top: 3rem;
 	flex-direction: column;
 
 	h2 {
-		color: white;
+		color: orange;
 		font-size: 2.5rem;
 
 		span {
-			color: orange;
+			color: white;
 		}
 	}
 
+	@media screen and (max-width: 1250px) {
+		margin-top: 8rem;
+	}
+
 	@media screen and (max-width: 480px) {
-		margin: -2rem 0 -4rem 0;
+		margin: 3rem 0 0rem 0;
 
 		h2 {
-			font-size: 1.3rem;
+			font-size: 1.5rem;
 		}
 	}
 

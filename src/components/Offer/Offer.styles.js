@@ -11,8 +11,6 @@ export const AboutStyled = styled.div`
 		margin-top: 10rem;
 		padding: 2rem;
 		gap: 5rem;
-		
-		
 	}
 
 	@media screen and (max-width: 900px) {
@@ -40,7 +38,7 @@ export const Awesome = styled.div`
 		font-weight: bold;
 	}
 	span:nth-child(3) {
-		color: #000000;
+		color: white;
 		font-size: 1rem;
 		margin-top: 1.2rem;
 		margin-bottom: 2rem;
@@ -55,7 +53,6 @@ export const Awesome = styled.div`
 
 		span:nth-child(2) {
 			font-size: 2.3rem;
-			margin: 1rem;
 		}
 		span:nth-child(3) {
 			font-size: 1.2rem;
@@ -71,10 +68,9 @@ export const Awesome = styled.div`
 
 		span:nth-child(2) {
 			font-size: 1.5rem;
-			margin: 1rem;
 		}
 		span:nth-child(3) {
-			font-size: 14px;
+			font-size: 0.8rem;
 		}
 	}
 `

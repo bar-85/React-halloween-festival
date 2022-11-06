@@ -8,8 +8,7 @@ export const ContactCard = styled.div`
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.775);
 	z-index: 10;
-	@media screen and (max-width: 900px) {
-	}
+	
 `
 export const Wrapper = styled.div`
 	position: fixed;
@@ -20,6 +19,8 @@ export const Wrapper = styled.div`
 	left: 10%; 
 	width: 80%;
 	z-index: 100;
+
+	
 
 `
 
@@ -32,6 +33,11 @@ export const CardStyled = styled.div`
 	border-radius: 15px;
 	padding: 2rem;
 	color: white;
+
+	@media screen and (max-width: 320px) {
+		padding: 0.8rem;
+		font-size: 0.9rem;
+	}
 `
 export const ButtonStyled = styled.div`
 	display: flex;

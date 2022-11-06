@@ -112,7 +112,7 @@ export const ImgStyled = styled.div`
 `
 
 export const UpTitle = styled.div`
-	margin-top: 4rem;
+	margin-top: 0.1rem;
 	color: white;
 	background-color: rgba(76, 19, 106, 0.564);
 	border-radius: 1rem;

@@ -21,7 +21,7 @@ export const TicketHeader = styled.div`
 
 
 		h1 {
-			font-size: 1.75rem;
+			font-size: 1.5rem;
 		}
 	}
 

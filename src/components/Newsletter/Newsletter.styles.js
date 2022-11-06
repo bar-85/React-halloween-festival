@@ -5,12 +5,11 @@ export const Signup = styled.div`
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
-	margin: 4rem 0 1rem 5rem;
+	margin: 1rem 0 1rem 5rem;
 
 	h3 {
 		color: orange;
-		font-size: 24px;
-		font-weight: 600;
+		font-size: 1.5rem;
 		margin-bottom: 1rem;
 	}
 
@@ -79,11 +78,12 @@ export const Signup = styled.div`
 		}
 
 		p {
-			font-size: 1rem;
+			font-size: 0.8rem;
 		}
+	}
 
 	@media screen and (max-width: 320px) {
-		margin: 3rem 0 3rem 2rem;
+		margin: 0.5rem 0 0.5rem 2rem;
 
 		form {
 			display: flex;
@@ -95,16 +95,16 @@ export const Signup = styled.div`
 			}
 
 			button {
-			font-size: 0.9rem;
+				font-size: 0.9rem;
 			}
 		}
 
 		h3 {
-			margin-top: 4rem;
 			font-size: 1.3rem;
 		}
 
 		p {
 			font-size: 1rem;
 		}
+	}
 `
