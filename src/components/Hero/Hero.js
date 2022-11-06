@@ -9,7 +9,6 @@ import { Wrapper } from '../ItemStyles/ItemStyles.styles'
 import Blur from '../Blur/Blur'
 import ButtonContact from '../Buttons/ButtonContact'
 import ButtonTickets from '../Buttons/ButtonTickets'
-
 import { Link } from 'react-router-dom'
 
 

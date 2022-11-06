@@ -32,14 +32,11 @@ const Carousel = () => {
 					className='tCarousel'>
 					{CarouselData.map((caro, i) => (
 						<SwiperSlide >
-							<div className='caro' key={i}>
-								
+							<div className='caro' key={i}>							
 								<img src={caro.img} alt=''  />
 								<span >{caro.name}</span>
 								<hr />
-								<span>{caro.comment}</span>
-								
-								
+								<span>{caro.comment}</span>								
 							</div>
 						</SwiperSlide>
 					))}

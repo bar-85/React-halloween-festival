@@ -35,7 +35,6 @@ const Contact = () => {
 					<img src={spider} alt='pająk img' />
 				</motion.div>
 			</PageHeader>
-
 			<FormStyled>
 				<div>
 					<Blur />

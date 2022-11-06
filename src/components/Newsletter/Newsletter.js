@@ -11,7 +11,7 @@ const Newsletter = () => {
 		<Signup>
 			<div>
 				<h3>Newsletter</h3>
-				<p>bąć na bieżąco z wydarzeniami festiwalowymi</p>
+				<p>Bąć na bieżąco z wydarzeniami festiwalowymi</p>
 			</div>
 			<form onSubmit={submitHandler}>
 				<input type='email' placeholder='Wpisz swój email' id='email' required />

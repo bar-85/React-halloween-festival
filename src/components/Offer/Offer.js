@@ -20,7 +20,7 @@ const Offer = () => {
 			<AboutStyled>
 				<Awesome>
 					<span>UPIORNE ZABAWY</span>
-					<span>których nie zapomnisz!</span>
+					<span>Których nie zapomnisz!</span>
 					<span>
 						Przygotuj się na noc, pełną wrażeń!
 						<br />
@@ -31,7 +31,6 @@ const Offer = () => {
 					</Link>
 					<Blur />
 				</Awesome>
-
 				<Cards>
 					<motion.div initial={{ left: '40rem' }} whileInView={{ left: '30rem' }} transition={transition}>
 						<Card picture={imgOne} />

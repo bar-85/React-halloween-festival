@@ -44,7 +44,6 @@ const Quiz = () => {
 							<div>
 								({(score / questions.length).toFixed(2) * 100}%)
 							</div>
-
 							<div>
 								<p>Twój ostatni wynik: {recordedScore}</p>
 							</div>

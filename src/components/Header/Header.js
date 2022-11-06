@@ -6,8 +6,6 @@ import LogoHeader from '../Logo/LogoHeader'
 import SocialIcon from '../SocialIcon/SocialIcon'
 import ButtonContactWhite from '../Buttons/ButtonContactWhite'
 
-
-
 const Header = () => {
 	const [click, setClick] = useState(false)
 	const handleClick = () => setClick(!click)

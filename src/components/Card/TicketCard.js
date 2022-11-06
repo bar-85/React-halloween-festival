@@ -32,8 +32,7 @@ const TicketCard = () => {
 						</Features>
                         <div className='button'>
                             <Button onClick={toogleCardHandler} className='btn'>Czytaj więcej</Button>
-                        </div>
-                        
+                        </div>      
 					</Card>
 				))}
 			</TicketCards>
