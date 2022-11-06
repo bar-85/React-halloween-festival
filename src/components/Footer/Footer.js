@@ -1,11 +1,10 @@
 import React from 'react'
-import { Wrapper, Container, BottomText } from './Footer.styles'
+import { Wrapper, BottomText } from './Footer.styles'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
 	return (
 		<Wrapper>
-			<Container>
 				<ul>
 					<Link to='/'>
 						<li>Strona Główna</li>
@@ -24,7 +23,6 @@ const Footer = () => {
 					<span className='line'></span>
 					<p>© 2022 Halloween Festiwal | Wszelkie prawa zastrzeżone</p>
 				</BottomText>
-			</Container>
 		</Wrapper>
 	)
 }
