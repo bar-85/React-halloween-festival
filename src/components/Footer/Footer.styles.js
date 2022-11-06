@@ -2,11 +2,11 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
 	width: 100%;
-	background-color: rgba(76, 19, 106, 0.564);
-	border-top: 1px solid rgba(255, 187, 0, 0.258);
-	color: #eee;
 	padding: 3rem 1rem;
 	margin-top: 2rem;
+	background-color: rgba(76, 19, 106, 0.564);
+	border-top: 1px solid rgba(255, 187, 0, 0.258);
+	color: white;
 
 	ul {
 		display: flex;
@@ -28,7 +28,7 @@ export const Wrapper = styled.div`
 
 	@media screen and (max-width: 900px) {
 		font-size: 1rem;
-		
+
 		li {
 			padding: 0.5rem;
 		}

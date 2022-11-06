@@ -7,8 +7,7 @@ export const ContactCard = styled.div`
 	height: 100vh;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.775);
-	z-index: 10;
-	
+	z-index: 10;	
 `
 export const Wrapper = styled.div`
 	position: fixed;
@@ -19,19 +18,16 @@ export const Wrapper = styled.div`
 	left: 10%; 
 	width: 80%;
 	z-index: 100;
-
-	
-
 `
 
 export const CardStyled = styled.div`
 	position: absolute;
 	display: flex;
 	flex-direction: column;
-	background-color: rgb(95, 17, 136);
-	box-shadow: 0px 19px 60px rgba(255, 136, 0, 0.26);
 	border-radius: 15px;
 	padding: 2rem;
+	background-color: rgb(95, 17, 136);
+	box-shadow: 0px 19px 60px rgba(255, 136, 0, 0.26);
 	color: white;
 
 	@media screen and (max-width: 320px) {

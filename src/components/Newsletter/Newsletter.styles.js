@@ -8,14 +8,14 @@ export const Signup = styled.div`
 	margin: 1rem 0 1rem 5rem;
 
 	h3 {
-		color: orange;
-		font-size: 1.5rem;
 		margin-bottom: 1rem;
+		font-size: 1.5rem;
+		color: orange;
 	}
 
 	p {
-		color: white;
 		font-size: 20px;
+		color: white;
 	}
 
 	form {
@@ -36,6 +36,9 @@ export const Signup = styled.div`
 		}
 
 		button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			width: 5rem;
 			margin: 1rem 0 0 1rem;
 			padding: 0.5rem;
@@ -43,15 +46,12 @@ export const Signup = styled.div`
 			border: 4px solid transparent;
 			border-radius: 6px;
 			transition: 300ms all;
-			display: flex;
-			align-items: center;
-			justify-content: center;
 			color: black;
 			background-color: orange;
 
 			:hover {
-				cursor: pointer;
 				background-color: rgb(255, 200, 99);
+				cursor: pointer;
 			}
 		}
 	}
@@ -69,7 +69,7 @@ export const Signup = styled.div`
 			}
 
 			button {
-			font-size: 0.9rem;
+				font-size: 0.9rem;
 			}
 		}
 

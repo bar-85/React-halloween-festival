@@ -1,17 +1,17 @@
 import styled from 'styled-components'
 
 export const BlurStyled = styled.div`
+	position: absolute;
 	width: 25rem;
 	height: 25rem;
 	right: 0;
 	background: orange;
-	position: absolute;
 	border-radius: 20%;
 	filter: blur(212px);
 	z-index: -9;
 
 	@media screen and (max-width: 900px) {
-		width: 10rem;
 		top: 60%;
+		width: 10rem;	
 	}
 `

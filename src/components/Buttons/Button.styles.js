@@ -1,17 +1,17 @@
 import styled from 'styled-components'
 
 export const Button = styled.button`
-	padding: 0.5rem;
-	font-weight: bold;
-	border: 2px solid transparent;
-	transition: 300ms all;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 0.5rem;
+	width: 8rem;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: 300ms all;
 	color: black;
 	background-color: orange;
-	width: 8rem;
-	border-radius: 5px;
 
 	:hover {
 		cursor: pointer;
@@ -20,11 +20,11 @@ export const Button = styled.button`
 `
 
 export const ButtonContactWhiteStyled = styled(Button)`
-	color: white;
-	background-color: transparent;
 	margin: 0 2rem 0 1rem;
 	width: 8rem;
 	border: 2px solid white;
+	color: white;
+	background-color: transparent;
 
 	:hover {
 		cursor: pointer;
@@ -40,9 +40,10 @@ export const ButtonContactWhiteStyled = styled(Button)`
 
 export const ButtonTicketsStyled = styled(Button)`
 	transition: 300ms all;
+	border: 2px solid orange;
 	color: white;
 	background-color: transparent;
-	border: 2px solid orange;
+	
 
 	:hover {
 		cursor: pointer;

@@ -4,26 +4,25 @@ export const TicketCards = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 3rem;
 	margin: 7rem 0 10rem 0;
+	gap: 3rem;
 
 	@media screen and (max-width: 900px) {
 		flex-direction: column;
 	}
 
 	@media screen and (max-width: 480px) {
-        margin: 4rem 0 4rem 0;
+		margin: 4rem 0 4rem 0;
 	}
-
 `
 
 export const Card = styled.div`
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(76, 19, 106, 0.675);
-	box-shadow: 0px 19px 60px rgba(255, 136, 0, 0.26);
 	border-radius: 15px;
 	padding: 2rem;
+	background-color: rgba(76, 19, 106, 0.675);
+	box-shadow: 0px 19px 60px rgba(255, 136, 0, 0.26);
 	color: white;
 
 	:nth-child(2) {
@@ -40,24 +39,24 @@ export const Card = styled.div`
 	}
 
 	> :nth-child(1) {
+		align-self: center;
+		margin: 2rem;
 		font-size: 1.7rem;
 		font-weight: bold;
-		margin: 2rem;
-		align-self: center;
 		color: white;
 	}
 
 	> :nth-child(2) {
-		font-size: 2rem;
-		font-weight: bold;
 		align-self: center;
 		margin-bottom: 2rem;
+		font-size: 2rem;
+		font-weight: bold;
 		color: orange;
 	}
 
 	.button {
-		margin: 2rem;
 		align-self: center;
+		margin: 2rem;
 	}
 
 	@media screen and (max-width: 900px) {
@@ -67,9 +66,9 @@ export const Card = styled.div`
 	}
 
 	@media screen and (max-width: 320px) {
-        > :nth-child(1) {
-        font-size: 1.35rem;
-        }
+		> :nth-child(1) {
+			font-size: 1.35rem;
+		}
 	}
 `
 
@@ -92,21 +91,18 @@ export const Features = styled.div`
 export const Wrapper = styled.div`
 	display: flex;
 	justify-content: center;
-    align-items: center;
-	
+	align-items: center;
+
 	@media screen and (max-width: 900px) {
-		
 	}
 `
 
 export const CardStyled = styled.div`
-    display: flex;
+	display: flex;
 	flex-direction: column;
-	background-color: rgba(50, 6, 73, 0.859);
-	box-shadow: 0px 19px 60px rgba(255, 136, 0, 0.26);
 	border-radius: 15px;
 	padding: 2rem;
+	background-color: rgba(50, 6, 73, 0.859);
+	box-shadow: 0px 19px 60px rgba(255, 136, 0, 0.26);
 	color: white;
 `
-
-

@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 export const AboutStyled = styled.div`
-	padding: 0 3rem 0 3rem;
 	display: flex;
-	height: 30rem;
+	padding: 0 3rem 0 3rem;
 	margin-bottom: 5rem;
 	margin-top: 5rem;
+	height: 30rem;
 
 	@media screen and (max-width: 1250px) {
 		margin-top: 10rem;
@@ -14,11 +14,11 @@ export const AboutStyled = styled.div`
 	}
 
 	@media screen and (max-width: 900px) {
-		margin-top: 0;
 		flex-direction: column;
-		gap: 5rem;
+		margin-top: 0;
 		height: 66rem;
 		padding: 0;
+		gap: 5rem;
 	}
 `
 
@@ -28,20 +28,20 @@ export const Awesome = styled.div`
 	position: relative;
 
 	span:nth-child(1) {
-		color: white;
 		font-size: 2.5rem;
 		font-weight: bold;
+		color: white;
 	}
 	span:nth-child(2) {
-		color: orange;
 		font-size: 2.5rem;
 		font-weight: bold;
+		color: orange;
 	}
 	span:nth-child(3) {
-		color: white;
 		font-size: 1rem;
 		margin-top: 1.2rem;
 		margin-bottom: 2rem;
+		color: white;
 	}
 
 	@media screen and (max-width: 900px) {
@@ -77,7 +77,6 @@ export const Awesome = styled.div`
 
 export const Cards = styled.div`
 	position: relative;
-
 	* {
 		position: absolute;
 	}
@@ -86,16 +85,15 @@ export const Cards = styled.div`
 		margin-left: 5rem;
 	}
 
-
 	@media screen and (max-width: 1250px) {
 		margin-left: -25rem;
 	}
 
 	@media screen and (max-width: 900px) {
-		margin-left: 0;
 		align-items: center;
 		display: flex;
 		flex-direction: column;
+		margin-left: 0;
 		gap: 2rem;
 
 		* {

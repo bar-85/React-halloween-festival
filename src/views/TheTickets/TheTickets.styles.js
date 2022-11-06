@@ -4,13 +4,13 @@ export const TicketHeader = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 4rem;
 	flex-direction: column;
-
+	margin: 4rem;
+	
 	h1 {
-		color: white;
 		font-size: 2.5rem;
-
+		color: white;
+		
 		span {
 			color: orange;
 		}

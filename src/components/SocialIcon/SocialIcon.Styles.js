@@ -5,24 +5,24 @@ export const SocialIconStyles = styled.div`
 	margin-left: 14px;
 
 	a {
-		width: 42px;
-		height: 42px;
-		background: rgba(217, 217, 217, 0.1);
 		display: inline-flex;
-		border-radius: 50%;
-		margin-right: 6px;
 		align-items: center;
 		justify-content: center;
+		width: 42px;
+		height: 42px;
+		border-radius: 50%;
+		margin-right: 6px;
 		line-height: 1;
 		border: 1px solid rgba(255, 255, 255, 0.5);
+		background: rgba(217, 217, 217, 0.1);
 	}
 	a::before {
+		position: absolute;
 		content: '';
 		width: 42px;
 		height: 42px;
-		position: absolute;
-		background-color: rgba(255, 166, 0, 0.227);
 		border-radius: 50%;
+		background-color: rgba(255, 166, 0, 0.227);
 		transform: scale(0);
 		transition: 0.3s ease-in-out;
 	}

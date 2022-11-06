@@ -1,31 +1,30 @@
 import styled from 'styled-components'
 
-
 export const PageHeader = styled.div`
 	position: relative;
-	background-color:  rgb(76, 19, 106);
-	box-shadow: 4px 16px 74px 15px #d000ff2a;
-	height: 40vh;
-	width: 100%;
-	background-size: cover;
-	background-position: top 5% right 0%;
-	padding: 10px 80px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
+	padding: 10px 80px;
 	margin-top: 2rem;
 	margin-bottom: 3rem;
+	height: 40vh;
+	width: 100%;
+	background-size: cover;
+	background-position: top 5% right 0%;
+	background-color: rgb(76, 19, 106);
+	box-shadow: 4px 16px 74px 15px #d000ff2a;
 
 	h2 {
+		margin-bottom: 1rem;
 		font-size: 2.5rem;
 		color: orange;
-		margin-bottom: 1rem;
 	}
 
 	p {
-		color: white;
 		font-size: 1.5rem;
+		color: white;
 	}
 
 	.spider-img {
@@ -80,21 +79,20 @@ export const FormStyled = styled.div`
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-color: rgba(76, 19, 106, 0.675);
+		justify-content: space-evenly;
 		width: 40%;
 		height: min-content;
 		min-height: 200px;
 		height: 30rem;
 		border-radius: 15px;
 		padding: 0px;
-		display: flex;
 		box-shadow: 0px 19px 60px rgba(255, 136, 0, 0.26);
-		justify-content: space-evenly;
+		background-color: rgba(76, 19, 106, 0.675);
 
 		h1 {
-			color: orange;
-			font-size: 1.7rem;
 			margin-bottom: 1rem;
+			font-size: 1.7rem;
+			color: orange;	
 		}
 
 		div {
@@ -104,8 +102,8 @@ export const FormStyled = styled.div`
 		}
 
 		label {
-			font-size: 1rem;
 			margin-bottom: 0.5rem;
+			font-size: 1rem;
 			color: white;
 		}
 
@@ -130,12 +128,12 @@ export const FormStyled = styled.div`
 		}
 
 		.btn {
-			background-color: orange;
 			font-weight: bold;
-
+			background-color: orange;
+			
 			:hover {
-				cursor: pointer;
 				background-color: rgb(255, 200, 99);
+				cursor: pointer;
 			}
 		}
 
@@ -145,8 +143,8 @@ export const FormStyled = styled.div`
 		}
 
 		@media screen and (max-width: 320px) {
-			width: 310px;
 			margin-top: 5rem;
+			width: 310px;
 
 			h1 {
 				font-size: 1.5rem;
@@ -157,7 +155,7 @@ export const FormStyled = styled.div`
 			}
 
 			textarea {
-				width: 100%
+				width: 100%;
 			}
 
 			.btn {
@@ -166,7 +164,3 @@ export const FormStyled = styled.div`
 		}
 	}
 `
-
-
-
-

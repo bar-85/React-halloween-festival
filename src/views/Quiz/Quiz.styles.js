@@ -8,18 +8,23 @@ export const QuizStyled = styled.div`
 
 	.backImg {
 		position: absolute;
-		top: 11rem;
+		top: 14rem;
 		right: 0%;
 		height: 40rem;
 		z-index: -1;
 	}
 
+	@media screen and (max-width: 480px) {
+		.backImg {
+			top: 7.2rem;
+			height: 31.7rem;
+		}
+	}
+
 	@media screen and (max-width: 320px) {
 		.backImg {
-			top: 11rem;
-			right: 0%;
+			top: 13rem;
 			height: 31.7rem;
-			z-index: -1;
 		}
 	}
 `
@@ -27,26 +32,25 @@ export const AppStyled = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: rgba(76, 19, 106, 0.675);
+	justify-content: space-evenly;
 	width: 450px;
 	height: min-content;
 	min-height: 200px;
 	height: 30rem;
 	border-radius: 15px;
 	padding: 0px;
-	display: flex;
 	box-shadow: 0px 19px 60px rgba(255, 136, 0, 0.26);
-	justify-content: space-evenly;
+	background-color: rgba(76, 19, 106, 0.675);
 
 	@media screen and (max-width: 900px) {
-		width: 360px;
 		margin-top: -8rem;
+		width: 360px;
 		background-color: rgba(76, 19, 106, 0.925);
 	}
 
 	@media screen and (max-width: 320px) {
-		width: 310px;
 		margin-top: -5rem;
+		width: 310px;
 
 		.backImg {
 			top: 11rem;
@@ -62,16 +66,16 @@ export const Title = styled.div`
 	margin: 2rem;
 
 	span:nth-child(1) {
-		color: #ffffff;
+		margin-right: 1rem;
 		font-size: 2.5rem;
 		font-weight: bold;
-		margin-right: 1rem;
+		color: #ffffff;
 	}
 
 	span:nth-child(2) {
-		color: orange;
 		font-size: 2.5rem;
 		font-weight: bold;
+		color: orange;
 		text-transform: uppercase;
 	}
 
@@ -121,22 +125,22 @@ export const QuestionTitle = styled.div`
 `
 
 export const Answer = styled.div`
-	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 
 	button {
+		align-items: center;
 		width: 80%;
 		font-size: 1rem;
-		color: #ffffff;
-		background-color: #2c1803c4;
 		border-radius: 15px;
 		padding: 5px;
 		margin: 0.2rem;
-		align-items: center;
 		border: 1px solid #ffbb002c;
+		color: #ffffff;
+		background-color: #2c1803c4;
 		cursor: pointer;
 
 		:hover {
@@ -151,8 +155,8 @@ export const Answer = styled.div`
 `
 
 export const ScoreTitle = styled.div`
-	color: white;
 	font-size: 1rem;
+	color: white;
 
 	span {
 		color: orange;
@@ -163,20 +167,20 @@ export const ScoreTitle = styled.div`
 	}
 
 	div {
-		margin-top: 1rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-top: 1rem;
 	}
 
 	button {
-		width: 50%;
-		font-size: 1rem;
-		color: orange;
-		background-color: #2c1803c4;
+		align-items: center;
 		border-radius: 15px;
 		padding: 5px;
-		align-items: center;
+		width: 50%;
+		font-size: 1rem;
+		background-color: #2c1803c4;
+		color: orange;
 		border: 1px solid #ffbb00;
 		cursor: pointer;
 

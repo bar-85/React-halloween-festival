@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const Reasons = styled.div`
-	margin-top: 3rem;
 	display: flex;
+	margin-top: 3rem;
 	padding: 2rem;
 	gap: 2rem;
 
@@ -13,8 +13,8 @@ export const Reasons = styled.div`
 	}
 
 	@media screen and (max-width: 900px) {
-		margin-top: 0;
 		flex-direction: column-reverse;
+		margin-top: 0;
 	}
 `
 export const LeftSide = styled.div`
@@ -35,10 +35,10 @@ export const LeftSide = styled.div`
 `
 export const RightSide = styled.div`
 	flex: 1 1;
-	gap: 1rem;
 	display: flex;
 	flex-direction: column;
 	font-size: 2.5rem;
+	gap: 1rem;
 
 	.title > span:nth-child(1) {
 		font-weight: bold;
@@ -46,8 +46,8 @@ export const RightSide = styled.div`
 	}
 
 	.title > span:nth-child(2) {
-		color: orange;
 		font-weight: bold;
+		color: orange;
 	}
 
 	@media screen and (max-width: 1250px) {
@@ -107,7 +107,5 @@ export const Details = styled.div`
 		div > span {
 			font-size: 0.75rem;
 		}
-
-		
 	}
 `

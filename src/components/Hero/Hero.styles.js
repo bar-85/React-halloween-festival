@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 export const LeftSide = styled.div`
-position: relative;
+	position: relative;
+	display: flex;
+	flex-direction: column;
 	padding: 3rem;
 	padding-top: 0.5rem;
-	display: flex;
 	gap: 1.5rem;
-	flex-direction: column;
 `
 
 export const ImgStyled = styled.div`
@@ -42,8 +42,8 @@ export const ImgStyled = styled.div`
 		position: absolute;
 		right: 6%;
 		top: 16%;
-		z-index: -2;
 		width: 15rem;
+		z-index: -2;
 
 		@media screen and (max-width: 1150px) {
 			width: 10rem;
@@ -112,17 +112,17 @@ export const ImgStyled = styled.div`
 `
 
 export const UpTitle = styled.div`
-	margin-top: 0.1rem;
-	color: white;
-	background-color: rgba(76, 19, 106, 0.564);
-	border-radius: 1rem;
-	width: fit-content;
-	padding: 20px 13px;
-	text-transform: uppercase;
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
+	margin-top: 0.1rem;
+	width: fit-content;
+	padding: 20px 13px;
+	border-radius: 1rem;
+	color: white;
+	background-color: rgba(76, 19, 106, 0.564);
+	text-transform: uppercase;
 
 	span {
 		z-index: 2;
@@ -130,19 +130,19 @@ export const UpTitle = styled.div`
 
 	div {
 		position: absolute;
-		background-color: rgba(255, 166, 0, 0.026);
-		box-shadow: 0px 0px 79px 62px rgba(255, 166, 0, 0.196);
 		width: 0rem;
 		height: 100%;
 		left: 8px;
 		border-radius: 3rem;
+		background-color: rgba(255, 166, 0, 0.026);
+		box-shadow: 0px 0px 79px 62px rgba(255, 166, 0, 0.196);
 		z-index: 1;
 	}
 
 	@media screen and (max-width: 900px) {
+		align-self: center;
 		margin: 0 0 1rem 0;
 		font-size: 1.5rem;
-		align-self: center;
 		transform: scale(0.8);
 	}
 
@@ -162,11 +162,11 @@ export const UpTitle = styled.div`
 export const MediumTitle = styled.div`
 	display: flex;
 	flex-direction: column;
-	gap: 1.5rem;
-	text-transform: uppercase;
 	font-size: 4.5rem;
 	font-weight: bold;
 	color: white;
+	text-transform: uppercase;
+	gap: 1.5rem;
 	z-index: 2;
 
 	.stroke-text {
@@ -177,9 +177,9 @@ export const MediumTitle = styled.div`
 	}
 
 	@media screen and (max-width: 900px) {
-		font-size: 4.5rem;
 		align-items: center;
 		justify-content: center;
+		font-size: 4.5rem;
 	}
 
 	@media screen and (max-width: 768px) {
@@ -205,8 +205,8 @@ export const FestivalDate = styled.div`
 	}
 
 	div > span:nth-of-type(1) {
-		color: orange;
 		font-size: 2rem;
+		color: orange;
 	}
 
 	div > span:nth-of-type(2) {
@@ -219,13 +219,13 @@ export const FestivalDate = styled.div`
 		margin-top: 2rem;
 
 		div > span:nth-of-type(1) {
-			font-size: 2rem;
 			align-self: center;
+			font-size: 2rem;
 		}
 
 		div > span:nth-of-type(2) {
-			font-size: 1rem;
 			align-self: center;
+			font-size: 1rem;
 		}
 	}
 
@@ -262,8 +262,8 @@ export const FestivalDate = styled.div`
 
 export const HeroButton = styled.div`
 	display: flex;
-	gap: 1rem;
 	font-weight: normal;
+	gap: 1rem;
 
 	@media screen and (max-width: 900px) {
 		justify-content: center;

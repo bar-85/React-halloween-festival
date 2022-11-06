@@ -14,45 +14,45 @@ export const Hamburger = styled.div`
 
 	@media screen and (max-width: 900px) {
 		position: fixed;
-		right: 1rem;
 		display: block;
 		margin-top: 1rem;
+		right: 1rem;
 		z-index: 20;
 	}
 `
 export const Nav = styled.div`
 	&.header-menu {
 		align-items: center;
-		list-style: none;
 		display: flex;
+		list-style: none;
 		gap: 2rem;
 	}
 
 	li {
-		cursor: pointer;
 		color: white;
+		cursor: pointer;
 	}
 
 	li:hover {
-		cursor: pointer;
 		color: orange;
+		cursor: pointer;
 	}
 
 	@media screen and (max-width: 900px) {
 		&.header-menu {
 			position: fixed;
+			flex-direction: column;
 			right: -100%;
 			top: 100px;
-			flex-direction: column;
+			text-align: center;
 			background-color: rgba(76, 19, 106, 0.966);
 			width: 52%;
 			height: auto;
-			z-index: 999;
 			border-top-left-radius: 40px;
 			border-bottom-left-radius: 40px;
 			border: 2px solid orange;
-			text-align: center;
 			transition: 0.3s;
+			z-index: 999;
 		}
 
 		@media screen and (max-width: 320px) {
