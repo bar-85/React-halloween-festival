@@ -45,7 +45,7 @@ export const PageHeader = styled.div`
 		}
 
 		.spider-img {
-			top: -4rem;
+			top: -3rem;
 		}
 	}
 

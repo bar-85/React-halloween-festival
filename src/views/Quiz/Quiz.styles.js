@@ -16,7 +16,7 @@ export const QuizStyled = styled.div`
 
 	@media screen and (max-width: 480px) {
 		.backImg {
-			top: 10rem;
+			top: 12rem;
 			height: 31.7rem;
 		}
 	}
