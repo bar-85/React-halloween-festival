@@ -28,12 +28,12 @@ export const Nav = styled.div`
 		gap: 2rem;
 	}
 
-	li {
+	.link {
 		color: white;
 		cursor: pointer;
 	}
 
-	li:hover {
+	.link:hover {
 		color: orange;
 		cursor: pointer;
 	}

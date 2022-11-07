@@ -19,14 +19,14 @@ const Header = () => {
 				{click ? <FaTimes size={32} style={{ color: 'white' }} /> : <FaBars size={32} style={{ color: 'white' }} />}
 			</Hamburger>
 			<Nav className={click ? 'header-menu active' : 'header-menu'}>
-				<Link to='/' onClick={closeMenu}>
-					<li>Strona Główna</li>
+				<Link to='/' className="link" onClick={closeMenu}>
+					Strona Główna
 				</Link>
-				<Link to='/the-tickets' onClick={closeMenu}>
-					<li>Bilety</li>
+				<Link to='/the-tickets' className="link" onClick={closeMenu}>
+					Bilety
 				</Link>
-				<Link to='/quiz' onClick={closeMenu}>
-					<li>Quiz</li>
+				<Link to='/quiz' className="link" onClick={closeMenu}>
+					Quiz
 				</Link>
 				<SocialIcon />
 				<Link to='/contact' >
