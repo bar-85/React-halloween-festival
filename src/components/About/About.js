@@ -1,6 +1,6 @@
 import React from 'react'
-import cat from '../../assets/cat1.png'
-import pumpkin from '../../assets/pumpkin1.png'
+import cat from '../../assets/cat1.webp'
+import pumpkin from '../../assets/pumpkin1.webp'
 import { Reasons, LeftSide, RightSide, Details } from './About.styles'
 
 const About = () => {

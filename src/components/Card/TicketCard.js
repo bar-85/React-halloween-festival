@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { TicketCards, Card, Features } from './TicketCard.styles'
 import { ticketsData } from '../../data/ticketsData'
-import orangeImg from '../../assets/orange.png'
+import orangeImg from '../../assets/orange.webp'
 import { Button } from '../Buttons/Button.styles'
 import ShowCardStyled from './ShowCardStyled'
 

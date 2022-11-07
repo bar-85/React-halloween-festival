@@ -4,7 +4,7 @@ import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import { PageHeader, FormStyled } from './Contact.styles'
 import Blur from '../../components/Blur/Blur'
-import spider from '../../assets/spider.png'
+import spider from '../../assets/spider.webp'
 import { motion } from 'framer-motion'
 import Newsletter from '../../components/Newsletter/Newsletter'
 

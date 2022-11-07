@@ -1,9 +1,9 @@
-import firework from '../assets/firework.png'
-import park from '../assets/park.png'
-import train from '../assets/train.png'
-import fire from '../assets/fire.png'
-import pumpkin from '../assets/pumpkin.png'
-import cinema from '../assets/cinema.png'
+import firework from '../assets/firework.webp'
+import park from '../assets/park.webp'
+import train from '../assets/train.webp'
+import fire from '../assets/fire.webp'
+import pumpkin from '../assets/pumpkin.webp'
+import cinema from '../assets/cinema.webp'
 
 export const CarouselData = [
 	{
