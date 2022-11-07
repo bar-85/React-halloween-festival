@@ -36,7 +36,7 @@ const Offer = () => {
 						<Card picture={imgOne} />
 					</motion.div>
 
-					<motion.div initial={{ left: '3rem', top: '12rem' }} whileInView={{ left: '8rem' }} transition={transition}>
+					<motion.div initial={{ left: '3rem', top: '12rem' }} whileInView={{ left: '14rem' }} transition={transition}>
 						<Card picture={imgThree} />
 					</motion.div>
 

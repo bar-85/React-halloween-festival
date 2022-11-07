@@ -76,12 +76,12 @@ export const ImgStyled = styled.div`
 	.bat {
 		position: absolute;
 		left: 30%;
-		top: 7rem;
+		top: 5rem;
 		z-index: -3;
 
 		.bat-image {
 			width: 10rem;
-			height: 10rem;
+			height: auto;
 		}
 		@media screen and (max-width: 1150px) {
 			left: 35%;

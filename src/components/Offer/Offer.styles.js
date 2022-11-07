@@ -26,6 +26,7 @@ export const Awesome = styled.div`
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	margin-top: 3rem;
 	
 
 	span:nth-child(1) {
