@@ -17,24 +17,19 @@ export const ImgStyled = styled.div`
 
 	.house {
 		position: absolute;
-		top: 25%;
+		top: 28%;
 		left: 25%;
+		width: 60rem;
+		height: auto;
 		z-index: -3;
-
-		@media screen and (max-width: 1150px) {
-			top: 20rem;
-		}
 
 		@media screen and (max-width: 900px) {
 			position: relative;
 			margin-bottom: 1rem;
 			top: 13rem;
-			left: 11%;
+			left: 5%;
+			width: 80%;
 			z-index: -3;
-
-			.house-image {
-				width: 70%;
-			}
 		}
 	}
 
@@ -43,6 +38,7 @@ export const ImgStyled = styled.div`
 		right: 6%;
 		top: 16%;
 		width: 15rem;
+		height: auto;
 		z-index: -2;
 
 		@media screen and (max-width: 1150px) {
@@ -54,12 +50,12 @@ export const ImgStyled = styled.div`
 			position: relative;
 			width: 11rem;
 			left: 61%;
-			top: -30rem;
+			top: -38rem;
 			z-index: 2;
 		}
 
 		@media screen and (max-width: 768px) {
-			top: -27rem;
+			top: -31rem;
 			width: 8rem;
 		}
 
@@ -77,12 +73,10 @@ export const ImgStyled = styled.div`
 		position: absolute;
 		left: 30%;
 		top: 5rem;
+		width: 10rem;
+		height: auto;
 		z-index: -3;
 
-		.bat-image {
-			width: 10rem;
-			height: auto;
-		}
 		@media screen and (max-width: 1150px) {
 			left: 35%;
 		}
@@ -90,12 +84,12 @@ export const ImgStyled = styled.div`
 		@media screen and (max-width: 900px) {
 			position: relative;
 			left: 17%;
-			top: -18rem;
+			top: -23rem;
 			z-index: 3;
 		}
 
 		@media screen and (max-width: 768px) {
-			top: -16rem;
+			top: -18rem;
 		}
 
 		@media screen and (max-width: 480px) {

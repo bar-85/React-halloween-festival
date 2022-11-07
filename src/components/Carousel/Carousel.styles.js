@@ -86,7 +86,7 @@ export const CarouselHeader = styled.div`
 	}
 
 	@media screen and (max-width: 480px) {
-		margin: 3rem 0 0rem 0;
+		margin: 9rem 0 0rem 0;
 
 		h2 {
 			font-size: 1.5rem;
