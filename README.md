@@ -1,3 +1,49 @@
+<h1 align="center"> Halloween Festiwal </h >
+<br />
+<h2 align="center"> Responsywna strona internetowa festiwalu Halloween  </h2>
+<br />
+<br />
+Stronę można zobaczyć pod adresem: https://halloween-festival.netlify.app/
+<br />
+<br />
+<h2 align="left"> Technologie: </h2>
+<br />
+* JavaScript / React - React Router (Hooks)
+<br />
+ CSS - Styled Components
+<br />
+Framer-motion
+<br />
+Swiper
+<br />
+<br />
+<br />
+
+
+![zdj1](https://user-images.githubusercontent.com/105555319/200202651-7a8b6950-e26f-4e6b-937c-77a514fbbd6e.jpg)
+<br />
+<br />
+![zdj2](https://user-images.githubusercontent.com/105555319/200202664-6f0a5082-f3bb-4a05-9b64-ac65b26aead4.jpg)
+<br />
+<br />
+<br />![zdj4](https://user-images.githubusercontent.com/105555319/200202692-07678c89-80b7-4a3b-9865-3f6a5d899c13.jpg)
+<br />
+<br />
+![zdj6](https://user-images.githubusercontent.com/105555319/200202701-d81fa11f-b8d1-4d2c-a3d9-702d5909e320.jpg)
+<br />
+<br />![s1](https://user-images.githubusercontent.com/105555319/200202706-a041a0b1-3b95-4cff-9142-6f41a499e353.jpg)
+<br />
+<br />
+![s2](https://user-images.githubusercontent.com/105555319/200202715-e21b326a-0eb9-4369-ab5f-c7d3e6d84da6.jpg)
+<br />
+<br />
+![s3](https://user-images.githubusercontent.com/105555319/200202722-bb319191-2a4b-4ab1-913b-b9e68123c7e0.jpg)
+
+<br />
+<br />
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
