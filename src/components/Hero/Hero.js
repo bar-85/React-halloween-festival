@@ -63,14 +63,14 @@ const Hero = () => {
 				</LeftSide>
 				<ImgStyled>
 					<div className='house'>
-						<img fetchpriority="low" src={house} alt='dom img' className='house-image' />
+						<img fetchpriority="high" src={house} alt='dom img' />
 					</div>
 					<div className='bat'>
 						<motion.div
 							animate={{ y: [0, 10, 7, 15, 9, 12, 0] }}
 							transition={{ duration: 5, type: 'tween', repeat: Infinity }}
 							className='bat-image-motion'>
-							<img src={bat} alt='nietoperz img' className='bat-image' />
+							<img src={bat} alt='nietoperz img' />
 						</motion.div>
 					</div>
 					<div className='witch'>
