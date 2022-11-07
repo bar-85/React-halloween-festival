@@ -26,8 +26,6 @@ Swiper
 ![zdj2](https://user-images.githubusercontent.com/105555319/200202664-6f0a5082-f3bb-4a05-9b64-ac65b26aead4.jpg)
 <br />
 <br />
-![zdj3](https://user-images.githubusercontent.com/105555319/200202682-7dc90fea-f176-4054-ba12-e3435b82a089.jpg)
-<br />
 <br />![zdj4](https://user-images.githubusercontent.com/105555319/200202692-07678c89-80b7-4a3b-9865-3f6a5d899c13.jpg)
 <br />
 <br />
