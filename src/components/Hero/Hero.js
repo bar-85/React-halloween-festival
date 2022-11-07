@@ -63,7 +63,7 @@ const Hero = () => {
 				</LeftSide>
 				<ImgStyled>
 					<div className='house'>
-						<img fetchpriority="high" src={house} alt='dom img' />
+						<img src={house} alt='dom img' />
 					</div>
 					<div className='bat'>
 						<motion.div
