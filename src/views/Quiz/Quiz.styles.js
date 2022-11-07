@@ -16,7 +16,7 @@ export const QuizStyled = styled.div`
 
 	@media screen and (max-width: 480px) {
 		.backImg {
-			top: 7.2rem;
+			top: 10rem;
 			height: 31.7rem;
 		}
 	}
@@ -51,13 +51,6 @@ export const AppStyled = styled.div`
 	@media screen and (max-width: 320px) {
 		margin-top: -5rem;
 		width: 310px;
-
-		.backImg {
-			top: 11rem;
-			right: 0%;
-			height: 31rem;
-			z-index: -1;
-		}
 	}
 `
 export const Title = styled.div`

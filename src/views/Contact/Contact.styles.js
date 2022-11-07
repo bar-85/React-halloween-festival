@@ -45,7 +45,7 @@ export const PageHeader = styled.div`
 		}
 
 		.spider-img {
-			top: -8.8rem;
+			top: -4rem;
 		}
 	}
 
@@ -60,7 +60,7 @@ export const PageHeader = styled.div`
 		}
 
 		.spider-img {
-			top: -3rem;
+			top: -5.2rem;
 		}
 	}
 `
@@ -138,6 +138,7 @@ export const FormStyled = styled.div`
 		}
 
 		@media screen and (max-width: 900px) {
+			margin-top: -3rem;
 			width: 360px;
 			background-color: rgba(76, 19, 106, 0.925);
 		}
