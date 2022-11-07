@@ -26,6 +26,7 @@ export const Awesome = styled.div`
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	
 
 	span:nth-child(1) {
 		font-size: 2.5rem;
@@ -70,7 +71,7 @@ export const Awesome = styled.div`
 			font-size: 1.5rem;
 		}
 		span:nth-child(3) {
-			font-size: 0.8rem;
+			font-size: 0.9rem;
 		}
 	}
 `

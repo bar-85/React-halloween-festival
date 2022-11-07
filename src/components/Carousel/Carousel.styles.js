@@ -17,7 +17,7 @@ export const CarouselStyled = styled.div`
 		height: 20rem;
 		padding: 2rem;
 		border-radius: 0.5rem;
-		background: #c800ff3d;
+		background: #3e024f;
 		box-shadow: 2px 0px 20px rgba(255, 136, 0, 0.152);
 		gap: 0.5rem;
 
@@ -33,13 +33,13 @@ export const CarouselStyled = styled.div`
 			font-size: 1.1rem;
 			letter-spacing: 1px;
 			margin-top: 6rem;
-			color: orange;
+			color: #ffb732;
 		}
 
 		> hr {
 			height: 1px;
 			width: 50%;
-			background-color: #2b0b42;
+			background-color: #9200fb;
 			border: none;
 		}
 
@@ -49,17 +49,17 @@ export const CarouselStyled = styled.div`
 
 		@media screen and (max-width: 480px) {
 			> span:nth-of-type(2) {
-				font-size: 0.8rem;
+				font-size: 1rem;
 			}
 		}
 
 		@media screen and (max-width: 320px) {
 			> span:nth-of-type(1) {
-				font-size: 0.9rem;
+				font-size: 1rem;
 			}
 
 			> span:nth-of-type(2) {
-				font-size: 0.75rem;
+				font-size: 1rem;
 			}
 		}
 	}

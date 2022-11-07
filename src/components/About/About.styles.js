@@ -95,7 +95,7 @@ export const Details = styled.div`
 
 	@media screen and (max-width: 480px) {
 		div > span {
-			font-size: 0.8rem;
+			font-size: 1rem;
 		}
 
 		div > img {

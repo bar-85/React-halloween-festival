@@ -66,7 +66,7 @@ export const Nav = styled.div`
 			right: -3px;
 		}
 
-		li {
+		.link {
 			margin-top: 2.5rem;
 		}
 	}
