@@ -25,7 +25,7 @@ const TicketCard = () => {
 						<Features>
 							{ticket.features.map((feature, i) => (
 								<div className='feature' key={i}>
-                                    <img src={orangeImg} alt="" />
+                                    <img src={orangeImg} alt="img" />
                                     <span key={i}>{feature}</span>
                                 </div>
 							))}

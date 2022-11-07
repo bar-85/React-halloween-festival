@@ -36,7 +36,7 @@ const Quiz = () => {
 		<div>
 			<Header />
 			<QuizStyled>
-				<img src={backImg} alt='' className='backImg' />
+				<img src={backImg} alt='drzewa i dynie tło' className='backImg' />
 				<AppStyled>
 					{showScore ? (
 						<ScoreTitle>

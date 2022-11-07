@@ -8,13 +8,13 @@ const SocialIcon = () => {
 	return (
 		<SocialIconStyles>
 			<a href='/'>
-				<img src={navIcon1} alt='' />
+				<img src={navIcon1} alt='linkedin logo' />
 			</a>
 			<a href='/'>
-				<img src={navIcon2} alt='' />
+				<img src={navIcon2} alt='facebook logo' />
 			</a>
 			<a href='/'>
-				<img src={navIcon3} alt='' />
+				<img src={navIcon3} alt='instagram logo' />
 			</a>
 		</SocialIconStyles>
 	)
