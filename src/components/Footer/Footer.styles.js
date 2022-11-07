@@ -8,20 +8,22 @@ export const Wrapper = styled.div`
 	border-top: 1px solid rgba(255, 187, 0, 0.258);
 	color: white;
 
-	ul {
+	@media screen and (max-width: 320px) {
+		padding: 1rem 0.1rem;
+		font-size: 1rem;
+	}
+`
+
+export const Nav = styled.div`
 		display: flex;
 		justify-content: center;
-	}
 
-	li {
+	.link {
 		padding: 1rem;
-	}
-
-	li {
 		color: #fff;
 	}
 
-	li:hover {
+	.link:hover {
 		border-bottom: 3px solid orange;
 		color: orange;
 	}
@@ -29,14 +31,9 @@ export const Wrapper = styled.div`
 	@media screen and (max-width: 900px) {
 		font-size: 1rem;
 
-		li {
+		.link {
 			padding: 0.5rem;
 		}
-	}
-
-	@media screen and (max-width: 320px) {
-		padding: 1rem 0.1rem;
-		font-size: 1rem;
 	}
 `
 
