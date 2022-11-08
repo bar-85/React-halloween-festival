@@ -3,7 +3,7 @@
 <h2 align="center"> Responsywna strona internetowa festiwalu Halloween  </h2>
 <br />
 <br />
-Stronę można zobaczyć pod adresem: https://halloween-festival.netlify.app/
+Stronę można zobaczyć pod adresem: https://halloween-festival-pl.netlify.app/
 <br />
 <br />
 <h2 align="left"> Technologie: </h2>
