@@ -20,6 +20,6 @@ export const Wrapper = styled.div`
 	}
 
 	@media screen and (max-width: 480px) {
-		gap: 1rem;
+		gap: 3rem;
 	}
 `
