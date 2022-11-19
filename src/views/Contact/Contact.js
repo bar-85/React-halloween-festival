@@ -1,7 +1,5 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
 import { PageHeader, FormStyled } from './Contact.styles'
 import Blur from '../../components/Blur/Blur'
 import spider from '../../assets/spider.webp'
@@ -28,7 +26,6 @@ const Contact = () => {
 
 	return (
 		<>
-			<Header />
 			<PageHeader>
 				<h2>Chcesz dowiedzieć się wiecej? </h2>
 				<p>Skontaktuj się z nami a my odpowiemy na wszystkie pytania.</p>
@@ -60,7 +57,6 @@ const Contact = () => {
 				</form>
 			</FormStyled>
 			<Newsletter />
-			<Footer />
 		</>
 	)
 }

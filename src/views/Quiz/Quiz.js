@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
 import { QuizStyled, AppStyled, Title, Question, QuestionTitle, Answer, ScoreTitle } from './Quiz.styles'
 import backImg from '../../assets/back.webp'
 import { questions } from '../../data/quizData'
@@ -34,7 +32,6 @@ const Quiz = () => {
 
 	return (
 		<div>
-			<Header />
 			<QuizStyled>
 				<img src={backImg} alt='drzewa i dynie tło' className='backImg' />
 				<AppStyled>
@@ -71,9 +68,6 @@ const Quiz = () => {
 					)}
 				</AppStyled>
 			</QuizStyled>
-			<section>
-				<Footer />
-			</section>
 		</div>
 	)
 }
