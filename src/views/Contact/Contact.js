@@ -17,6 +17,7 @@ const Contact = () => {
 		emailjs.sendForm('service_rk6lh6f', 'template_8w8gdsj', form.current, 'KFBtLQyWJQrdrvHfT').then(
 			result => {
 				console.log(result.text)
+				alert("Wysłano wiadomość")
 			},
 			error => {
 				console.log(error.text)
