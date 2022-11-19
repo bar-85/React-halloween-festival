@@ -21,7 +21,7 @@ export const questions = [
 		questionText: 'Halloween najpopularniejsze jest w...?',
 		answerOptions: [
 			{ answerText: 'Polsce', isCorrect: false },
-			{ answerText: 'Holnadii', isCorrect: false },
+			{ answerText: 'Holandii', isCorrect: false },
 			{ answerText: 'USA', isCorrect: true },
 			{ answerText: 'Turcji', isCorrect: false },
 		],
