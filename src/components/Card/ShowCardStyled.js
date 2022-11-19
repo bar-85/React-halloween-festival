@@ -1,6 +1,6 @@
 import React from 'react'
 import ButtonContact from '../Buttons/ButtonContact'
-import ButtonTickets from '../Buttons/ButtonTickets'
+import ButtonBack from '../Buttons/ButtonBack'
 import { Wrapper, CardStyled, ButtonStyled, ContactCard } from './ShowCardStyled.styles'
 import { Link } from 'react-router-dom'
 
@@ -25,7 +25,7 @@ const ShowCardStyled = () => {
 							<ButtonContact />
 						</Link>
 						<Link to='../the-tickets' onClick={refreshPage} >
-							<ButtonTickets />
+							<ButtonBack />
 						</Link>
 					</ButtonStyled>
 				</CardStyled>
