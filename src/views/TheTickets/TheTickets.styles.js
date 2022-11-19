@@ -5,7 +5,7 @@ export const TicketHeader = styled.div`
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin: 4rem;
+	margin: 1rem;
 	
 	h1 {
 		font-size: 2.5rem;

@@ -8,7 +8,7 @@ export const QuizStyled = styled.div`
 
 	.backImg {
 		position: absolute;
-		top: 14rem;
+		top: 16rem;
 		right: 0%;
 		height: 40rem;
 		z-index: -1;
