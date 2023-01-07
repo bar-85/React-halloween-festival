@@ -20,7 +20,7 @@ Swiper
 <br />
 
 
-![zdj1](https://user-images.githubusercontent.com/105555319/200202651-7a8b6950-e26f-4e6b-937c-77a514fbbd6e.jpg)
+![Screenshot_7](https://user-images.githubusercontent.com/105555319/211169137-db52413c-7c6a-43b4-8602-5080e9adc018.jpg)
 <br />
 <br />
 ![zdj2](https://user-images.githubusercontent.com/105555319/200202664-6f0a5082-f3bb-4a05-9b64-ac65b26aead4.jpg)
