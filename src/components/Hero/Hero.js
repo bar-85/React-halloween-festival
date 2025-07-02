@@ -47,7 +47,7 @@ const Hero = () => {
 						</div>
 						<div>
 							<span>
-								<NumberCounter end={2024} start={2000} delay='50' />
+								<NumberCounter end={2025} start={2000} delay='50' />
 							</span>
 							<span>rok</span>
 						</div>
