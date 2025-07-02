@@ -12,11 +12,11 @@ export const Wrapper = styled.div`
 	}
 
 	@media screen and (max-width: 1250px) {
-		gap: 4rem;
+		gap: 10rem;
 	}
 
 	@media screen and (max-width: 900px) {
-		gap: 4rem;
+		gap: 8rem;
 	}
 
 	@media screen and (max-width: 480px) {
