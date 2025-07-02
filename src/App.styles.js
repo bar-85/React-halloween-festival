@@ -5,18 +5,18 @@ export const Wrapper = styled.div`
 	mix-blend-mode: overlay;
 	display: flex;
 	flex-direction: column;
-	gap: 4rem;
+	gap: 10rem;
 	overflow: hidden;
 	::-webkit-scrollbar {
 		display: none;
 	}
 
 	@media screen and (max-width: 1250px) {
-		gap: 10rem;
+		gap: 8rem;
 	}
 
 	@media screen and (max-width: 900px) {
-		gap: 8rem;
+		gap: 6rem;
 	}
 
 	@media screen and (max-width: 480px) {
